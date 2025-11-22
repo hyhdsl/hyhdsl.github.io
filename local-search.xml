@@ -4,6 +4,82 @@
   
   
   <entry>
+    <title>将Windows11资源管理器改为Windows10的样子</title>
+    <link href="/2025/11/22/%E5%B0%86Windows11%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E6%94%B9%E4%B8%BAWindows10%E7%9A%84%E6%A0%B7%E5%AD%90/"/>
+    <url>/2025/11/22/%E5%B0%86Windows11%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E6%94%B9%E4%B8%BAWindows10%E7%9A%84%E6%A0%B7%E5%AD%90/</url>
+    
+    <content type="html"><![CDATA[<h1 id="将Windows11资源管理器改为Windows10的样子"><a href="#将Windows11资源管理器改为Windows10的样子" class="headerlink" title="将Windows11资源管理器改为Windows10的样子"></a>将Windows11资源管理器改为Windows10的样子</h1><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p><p>双击该文件导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Updated on: March 15, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br>@=&quot;CLSID_ItemsViewAdapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br>@=&quot;File Explorer Xaml Island View Adapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\ShellBrowser]<br>&quot;ITBar7Layout&quot;=hex:13,00,00,00,00,00,00,00,00,00,00,00,20,00,00,00,10,00,01,00,\<br>  00,00,00,00,01,00,00,00,01,07,00,00,5e,01,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00<br></code></pre></td></tr></table></figure><h1 id="还原方法"><a href="#还原方法" class="headerlink" title="还原方法"></a>还原方法</h1><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p><p>双击该文件导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>赛博偏方</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>将Windows11右键菜单改为Windows10的样子</title>
+    <link href="/2025/11/22/%E5%B0%86Windows11%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%94%B9%E4%B8%BAWindows10%E7%9A%84%E6%A0%B7%E5%AD%90/"/>
+    <url>/2025/11/22/%E5%B0%86Windows11%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%94%B9%E4%B8%BAWindows10%E7%9A%84%E6%A0%B7%E5%AD%90/</url>
+    
+    <content type="html"><![CDATA[<h1 id="将Windows11右键菜单改为Windows10的样子"><a href="#将Windows11右键菜单改为Windows10的样子" class="headerlink" title="将Windows11右键菜单改为Windows10的样子"></a>将Windows11右键菜单改为Windows10的样子</h1><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg add &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;\InprocServer32&quot; /f /ve<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe<br></code></pre></td></tr></table></figure><h1 id="还原成Windows11样式"><a href="#还原成Windows11样式" class="headerlink" title="还原成Windows11样式"></a>还原成Windows11样式</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;&quot; /f<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe <br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>赛博偏方</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>开启或关闭Windows休眠</title>
+    <link href="/2025/11/22/%E5%BC%80%E5%90%AF%E6%88%96%E5%85%B3%E9%97%ADWindows%E4%BC%91%E7%9C%A0/"/>
+    <url>/2025/11/22/%E5%BC%80%E5%90%AF%E6%88%96%E5%85%B3%E9%97%ADWindows%E4%BC%91%E7%9C%A0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关闭Windows休眠命令"><a href="#关闭Windows休眠命令" class="headerlink" title="关闭Windows休眠命令"></a>关闭Windows休眠命令</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h off<br></code></pre></td></tr></table></figure><h1 id="开启Windows休眠命令"><a href="#开启Windows休眠命令" class="headerlink" title="开启Windows休眠命令"></a>开启Windows休眠命令</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h on<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>赛博偏方</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>windows家庭版添加策略组</title>
+    <link href="/2025/11/22/windows%E5%AE%B6%E5%BA%AD%E7%89%88%E6%B7%BB%E5%8A%A0%E7%AD%96%E7%95%A5%E7%BB%84/"/>
+    <url>/2025/11/22/windows%E5%AE%B6%E5%BA%AD%E7%89%88%E6%B7%BB%E5%8A%A0%E7%AD%96%E7%95%A5%E7%BB%84/</url>
+    
+    <content type="html"><![CDATA[<h1 id="windows家庭版添加策略组"><a href="#windows家庭版添加策略组" class="headerlink" title="windows家庭版添加策略组"></a>windows家庭版添加策略组</h1><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bat"><br>@<span class="hljs-built_in">echo</span> off<br><br><span class="hljs-built_in">pushd</span> &quot;%~dp0&quot;<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~<span class="hljs-number">3</span>*.mum &gt;List.txt<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~<span class="hljs-number">3</span>*.mum &gt;&gt;List.txt<br><br><span class="hljs-keyword">for</span> /f <span class="hljs-variable">%%i</span> <span class="hljs-keyword">in</span> (&#x27;<span class="hljs-built_in">findstr</span> /i . List.txt <span class="hljs-number">2</span>^&gt;<span class="hljs-built_in">nul</span>&#x27;) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\<span class="hljs-variable">%%i</span>&quot;<br><br><span class="hljs-built_in">pause</span><br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>赛博偏方</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>小心买了10年域名</title>
     <link href="/2025/11/22/%E5%B0%8F%E5%BF%83%E4%B9%B0%E4%BA%8610%E5%B9%B4%E5%9F%9F%E5%90%8D/"/>
     <url>/2025/11/22/%E5%B0%8F%E5%BF%83%E4%B9%B0%E4%BA%8610%E5%B9%B4%E5%9F%9F%E5%90%8D/</url>
@@ -11,6 +87,12 @@
     <content type="html"><![CDATA[<h1 id="我不小心买了10年域名"><a href="#我不小心买了10年域名" class="headerlink" title="我不小心买了10年域名"></a>我不小心买了10年域名</h1><p>原本是想买1年玩一下的，结果点错了买成10年的了 (›´ω&#96;‹ )</p><p>所以干脆也搭个博客</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>杂谈</tag>
+      
+    </tags>
     
   </entry>
   
