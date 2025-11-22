@@ -61,7 +61,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.nekobiglazyer.work","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.nekobiglazyer.work","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -189,7 +189,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle">归档</span>
           
         </div>
 
@@ -217,7 +217,7 @@
                 
 
 <div class="list-group">
-  <p class="h4">共计 6 篇文章</p>
+  <p class="h4">共计 8 篇文章</p>
   <hr>
   
   
@@ -225,7 +225,19 @@
       
       <p class="h5">2025</p>
     
-    <a href="/2025/11/22/VAC%E5%B1%8F%E8%94%BD%E4%BF%AE%E5%A4%8D/" class="list-group-item list-group-item-action">
+    <a href="/2025/11/22/%E8%81%94%E6%83%B3%E5%8E%9F%E5%8E%82%E7%B3%BB%E7%BB%9F%E8%8E%B7%E5%8F%96/" class="list-group-item list-group-item-action">
+      <time>11-22</time>
+      <div class="list-group-item-title">联想原厂系统获取</div>
+    </a>
+  
+    
+    <a href="/2025/11/22/AutoCAD%E5%8D%81%E5%AD%97%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8%E6%8B%96%E6%B2%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="list-group-item list-group-item-action">
+      <time>11-22</time>
+      <div class="list-group-item-title">AutoCAD十字光标移动拖沓解决方法</div>
+    </a>
+  
+    
+    <a href="/2025/11/22/VAC%E5%8F%8D%E4%BD%9C%E5%BC%8A%E4%BF%AE%E5%A4%8D/" class="list-group-item list-group-item-action">
       <time>11-22</time>
       <div class="list-group-item-title">VAC屏蔽修复</div>
     </a>
@@ -338,21 +350,6 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
 
 
