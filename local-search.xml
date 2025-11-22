@@ -32,6 +32,12 @@
     <content type="html"><![CDATA[<h1 id="联想原厂系统获取"><a href="#联想原厂系统获取" class="headerlink" title="联想原厂系统获取"></a>联想原厂系统获取</h1><blockquote><p>本教程全程要科学上网，要自备至少有16G的U盘。</p></blockquote><p>去官网（香港）登记</p><blockquote><p><a href="https://pcsupport.lenovo.com/hk/zc/lenovorecovery">https://pcsupport.lenovo.com/hk/zc/lenovorecovery</a></p></blockquote><p><img src="/img/lenovoiso/1.png"></p><blockquote><p>图1中机器序列号可在联想电脑管家中查看或询问客服</p></blockquote><p><img src="/img/lenovoiso/2.png"></p><p><img src="/img/lenovoiso/3.png"></p><blockquote><p>点下一步后要求登录，这里拿邮箱注册一个</p></blockquote><p><img src="/img/lenovoiso/4.png"></p><blockquote><p>填写图4中的表，稍后会发电子邮件到你的邮箱，邮件里有下载地址</p></blockquote><p><img src="/img/lenovoiso/5.png"></p><blockquote><p>点击邮件里红圈的紫色字</p></blockquote><p><img src="/img/lenovoiso/6.png"></p><p><img src="/img/lenovoiso/7.png"></p><blockquote><p>下载好后运行</p></blockquote><p>之后跟着软件指示走(第二步时要你登录你刚才注册的账号)</p><p>要科学上网，不然下载速度可能会很慢</p>]]></content>
     
     
+    <categories>
+      
+      <category>-Windows系统</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -95,6 +101,12 @@
     <content type="html"><![CDATA[<h1 id="将Windows11资源管理器改为Windows10的样子"><a href="#将Windows11资源管理器改为Windows10的样子" class="headerlink" title="将Windows11资源管理器改为Windows10的样子"></a>将Windows11资源管理器改为Windows10的样子</h1><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p><p>双击该文件导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Updated on: March 15, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br>@=&quot;CLSID_ItemsViewAdapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br>@=&quot;File Explorer Xaml Island View Adapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\ShellBrowser]<br>&quot;ITBar7Layout&quot;=hex:13,00,00,00,00,00,00,00,00,00,00,00,20,00,00,00,10,00,01,00,\<br>  00,00,00,00,01,00,00,00,01,07,00,00,5e,01,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00<br></code></pre></td></tr></table></figure><h1 id="还原方法"><a href="#还原方法" class="headerlink" title="还原方法"></a>还原方法</h1><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p><p>双击该文件导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br></code></pre></td></tr></table></figure>]]></content>
     
     
+    <categories>
+      
+      <category>-Windows系统</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -115,6 +127,12 @@
     
     <content type="html"><![CDATA[<h1 id="将Windows11右键菜单改为Windows10的样子"><a href="#将Windows11右键菜单改为Windows10的样子" class="headerlink" title="将Windows11右键菜单改为Windows10的样子"></a>将Windows11右键菜单改为Windows10的样子</h1><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg add &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;\InprocServer32&quot; /f /ve<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe<br></code></pre></td></tr></table></figure><h1 id="还原成Windows11样式"><a href="#还原成Windows11样式" class="headerlink" title="还原成Windows11样式"></a>还原成Windows11样式</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;&quot; /f<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe <br></code></pre></td></tr></table></figure>]]></content>
     
+    
+    <categories>
+      
+      <category>-Windows系统</category>
+      
+    </categories>
     
     
     <tags>
@@ -137,6 +155,12 @@
     <content type="html"><![CDATA[<h1 id="关闭Windows休眠命令"><a href="#关闭Windows休眠命令" class="headerlink" title="关闭Windows休眠命令"></a>关闭Windows休眠命令</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h off<br></code></pre></td></tr></table></figure><h1 id="开启Windows休眠命令"><a href="#开启Windows休眠命令" class="headerlink" title="开启Windows休眠命令"></a>开启Windows休眠命令</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h on<br></code></pre></td></tr></table></figure>]]></content>
     
     
+    <categories>
+      
+      <category>-Windows系统</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -157,6 +181,12 @@
     
     <content type="html"><![CDATA[<h1 id="windows家庭版添加策略组"><a href="#windows家庭版添加策略组" class="headerlink" title="windows家庭版添加策略组"></a>windows家庭版添加策略组</h1><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bat"><br>@<span class="hljs-built_in">echo</span> off<br><br><span class="hljs-built_in">pushd</span> &quot;%~dp0&quot;<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~<span class="hljs-number">3</span>*.mum &gt;List.txt<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~<span class="hljs-number">3</span>*.mum &gt;&gt;List.txt<br><br><span class="hljs-keyword">for</span> /f <span class="hljs-variable">%%i</span> <span class="hljs-keyword">in</span> (&#x27;<span class="hljs-built_in">findstr</span> /i . List.txt <span class="hljs-number">2</span>^&gt;<span class="hljs-built_in">nul</span>&#x27;) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\<span class="hljs-variable">%%i</span>&quot;<br><br><span class="hljs-built_in">pause</span><br><br></code></pre></td></tr></table></figure>]]></content>
     
+    
+    <categories>
+      
+      <category>-Windows系统</category>
+      
+    </categories>
     
     
     <tags>
