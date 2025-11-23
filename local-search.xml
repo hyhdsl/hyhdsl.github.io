@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>解决VSCode每次启动都要登录同步</title>
+    <link href="/2025/11/23/%E8%A7%A3%E5%86%B3VSCode%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E9%83%BD%E8%A6%81%E7%99%BB%E5%BD%95%E5%90%8C%E6%AD%A5/"/>
+    <url>/2025/11/23/%E8%A7%A3%E5%86%B3VSCode%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E9%83%BD%E8%A6%81%E7%99%BB%E5%BD%95%E5%90%8C%E6%AD%A5/</url>
+    
+    <content type="html"><![CDATA[<p>在<code>powershell</code>里执行下面命令</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">cmdkey /list | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">&quot;LegacyGeneric:target=(vscode.+)&quot;</span> | <span class="hljs-built_in">ForEach-Object</span> &#123; cmdkey.exe /delete <span class="hljs-variable">$_</span>.Matches.Groups[<span class="hljs-number">1</span>].Value &#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>软件，赛博偏方</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>免费获取HEVC解码器扩展</title>
     <link href="/2025/11/23/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96HEVC%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%A9%E5%B1%95/"/>
     <url>/2025/11/23/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96HEVC%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%A9%E5%B1%95/</url>
