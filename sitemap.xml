@@ -200,13 +200,6 @@
   </url>
   
   <url>
-    <loc>https://blog.nekobiglazyer.work/tags/%E8%BD%AF%E4%BB%B6%EF%BC%8C%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nekobiglazyer.work/tags/steam/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -215,6 +208,13 @@
   
   <url>
     <loc>https://blog.nekobiglazyer.work/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nekobiglazyer.work/tags/%E8%BD%AF%E4%BB%B6%EF%BC%8C%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
