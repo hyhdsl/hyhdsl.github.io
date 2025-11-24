@@ -19,21 +19,22 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在powershell里执行下面命令 1cmdkey &#x2F;list | Select-String -Pattern &quot;LegacyGeneric:target&#x3D;(vscode.+)&quot; | ForEach-Object &#123; cmdkey.exe &#x2F;delete $_.Matches.Groups[1].Value &#125;">
+    <meta name="description" content="windows家庭版添加策略组复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12345678910111213@echo offpushd &quot;%~dp0&quot;dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &amp;g">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决VSCode每次启动都要登录同步">
-<meta property="og:url" content="https://blog.nekobiglazyer.work/2025/11/23/%E8%A7%A3%E5%86%B3VSCode%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E9%83%BD%E8%A6%81%E7%99%BB%E5%BD%95%E5%90%8C%E6%AD%A5/index.html">
+<meta property="og:title" content="windows家庭版添加策略组">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/843258ad.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="在powershell里执行下面命令 1cmdkey &#x2F;list | Select-String -Pattern &quot;LegacyGeneric:target&#x3D;(vscode.+)&quot; | ForEach-Object &#123; cmdkey.exe &#x2F;delete $_.Matches.Groups[1].Value &#125;">
+<meta property="og:description" content="windows家庭版添加策略组复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12345678910111213@echo offpushd &quot;%~dp0&quot;dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &amp;g">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-23T05:40:21.000Z">
-<meta property="article:modified_time" content="2025-11-23T05:49:32.252Z">
-<meta property="article:tag" content="软件，赛博偏方">
+<meta property="article:published_time" content="2025-11-22T05:49:22.000Z">
+<meta property="article:modified_time" content="2025-11-24T09:45:59.155Z">
+<meta property="article:tag" content="windows">
+<meta property="article:tag" content="赛博偏方">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>解决VSCode每次启动都要登录同步 - 赛博偏方</title>
+  <title>windows家庭版添加策略组 - 赛博偏方</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="解决VSCode每次启动都要登录同步"></span>
+            <span id="subtitle" data-typed-text="windows家庭版添加策略组"></span>
           
         </div>
 
@@ -210,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-23 13:40" pubdate>
-          2025年11月23日 下午
+        <time datetime="2025-11-22 13:49" pubdate>
+          2025年11月22日 下午
         </time>
       </span>
     
@@ -222,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          30 字
+          95 字
         
       </span>
     
@@ -270,12 +271,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">解决VSCode每次启动都要登录同步</h1>
+            <h1 id="seo-header">windows家庭版添加策略组</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年11月23日 下午
+                    本文最后更新于 2025年11月24日 下午
                   
                 
               </p>
@@ -283,9 +284,9 @@
             
               <div class="markdown-body">
                 
-                <p>在<code>powershell</code>里执行下面命令</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">cmdkey /list | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">&quot;LegacyGeneric:target=(vscode.+)&quot;</span> | <span class="hljs-built_in">ForEach-Object</span> &#123; cmdkey.exe /delete <span class="hljs-variable">$_</span>.Matches.Groups[<span class="hljs-number">1</span>].Value &#125;<br></code></pre></td></tr></table></figure>
-
+                <h1 id="windows家庭版添加策略组"><a href="#windows家庭版添加策略组" class="headerlink" title="windows家庭版添加策略组"></a>windows家庭版添加策略组</h1><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p>
+<p>然后右键以管理员身份运行</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bat"><br>@<span class="hljs-built_in">echo</span> off<br><br><span class="hljs-built_in">pushd</span> &quot;%~dp0&quot;<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~<span class="hljs-number">3</span>*.mum &gt;List.txt<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~<span class="hljs-number">3</span>*.mum &gt;&gt;List.txt<br><br><span class="hljs-keyword">for</span> /f <span class="hljs-variable">%%i</span> <span class="hljs-keyword">in</span> (&#x27;<span class="hljs-built_in">findstr</span> /i . List.txt <span class="hljs-number">2</span>^&gt;<span class="hljs-built_in">nul</span>&#x27;) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\<span class="hljs-variable">%%i</span>&quot;<br><br><span class="hljs-built_in">pause</span><br><br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -303,7 +304,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E8%BD%AF%E4%BB%B6/" class="category-chain-item">软件</a>
+  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/" class="category-chain-item">Windows系统</a>
   
   
 
@@ -318,7 +319,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%BD%AF%E4%BB%B6%EF%BC%8C%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/" class="print-no-link">#软件，赛博偏方</a>
+        <a href="/tags/%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/" class="print-no-link">#赛博偏方</a>
+      
+        <a href="/tags/windows/" class="print-no-link">#windows</a>
       
     </div>
   
@@ -330,15 +333,15 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>解决VSCode每次启动都要登录同步</div>
-      <div>https://blog.nekobiglazyer.work/2025/11/23/解决VSCode每次启动都要登录同步/</div>
+      <div>windows家庭版添加策略组</div>
+      <div>https://blog.nekobiglazyer.work/posts/843258ad.html</div>
     </div>
     <div class="license-meta">
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年11月23日</div>
+          <div>2025年11月22日</div>
         </div>
       
       
@@ -354,9 +357,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/11/23/%E7%94%B5%E4%BF%A1%E5%85%AC%E7%BD%91ip%E8%8E%B7%E5%8F%96/" title="电信公网ip获取">
+                      <a href="/posts/c5fbb796.html" title="开启或关闭Windows休眠">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">电信公网ip获取</span>
+                        <span class="hidden-mobile">开启或关闭Windows休眠</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -364,8 +367,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/11/23/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96HEVC%E8%A7%A3%E7%A0%81%E5%99%A8%E6%89%A9%E5%B1%95/" title="免费获取HEVC解码器扩展">
-                        <span class="hidden-mobile">免费获取HEVC解码器扩展</span>
+                      <a href="/posts/df936e94.html" title="不小心买了10年域名">
+                        <span class="hidden-mobile">不小心买了10年域名</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
