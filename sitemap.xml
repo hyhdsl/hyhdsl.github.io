@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.nekobiglazyer.work/google.json</loc>
-    
-    <lastmod>2025-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nekobiglazyer.work/posts/ab56cac1.html</loc>
     
     <lastmod>2025-11-24</lastmod>
@@ -202,13 +193,6 @@
   </url>
   
   <url>
-    <loc>https://blog.nekobiglazyer.work/tags/%E8%81%94%E6%83%B3/</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.nekobiglazyer.work/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -217,6 +201,13 @@
   
   <url>
     <loc>https://blog.nekobiglazyer.work/tags/steam/</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nekobiglazyer.work/tags/%E8%81%94%E6%83%B3/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
