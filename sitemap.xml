@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-<loc>https://blog.nekobiglazyer.work/sitemap.xml</loc>
-</url>
+  
   <url>
     <loc>https://blog.nekobiglazyer.work/posts/ab56cac1.html</loc>
     
@@ -153,6 +151,13 @@
   </url>
   
   <url>
+    <loc>https://blog.nekobiglazyer.work/tags/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nekobiglazyer.work/tags/AutoCAD/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,13 +173,6 @@
   
   <url>
     <loc>https://blog.nekobiglazyer.work/tags/Disclaimer/</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.nekobiglazyer.work/tags/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -232,14 +230,14 @@
   </url>
   
   <url>
-    <loc>https://blog.nekobiglazyer.work/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://blog.nekobiglazyer.work/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.nekobiglazyer.work/categories/%E6%9D%82%E8%B0%88/</loc>
+    <loc>https://blog.nekobiglazyer.work/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
