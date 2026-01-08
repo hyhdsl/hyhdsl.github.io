@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>解决Ubuntu在VirtualBox中画面卡顿问题</title>
+    <link href="/posts/6218248c.html"/>
+    <url>/posts/6218248c.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="解决Ubuntu在VirtualBox中画面卡顿问题"><a href="#解决Ubuntu在VirtualBox中画面卡顿问题" class="headerlink" title="解决Ubuntu在VirtualBox中画面卡顿问题"></a>解决Ubuntu在VirtualBox中画面卡顿问题</h1><p>如下图所示，将<code>显存(Video Memory)</code>改为<code>128MB</code>，同时勾选最下面的<code>3D 加速(3D Acceleration)</code></p><p><img src="/img/ubuntu/1.webp"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>软件</tag>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>用SteamCMD下载创意工坊内容</title>
     <link href="/posts/d5bcab24.html"/>
     <url>/posts/d5bcab24.html</url>
