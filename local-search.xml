@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>离线安装NETFramework3.5(包括.NET2.0和3.0)</title>
+    <link href="/posts/abaebcec.html"/>
+    <url>/posts/abaebcec.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="离线安装NETFramework3-5-包括-NET2-0和3-0"><a href="#离线安装NETFramework3-5-包括-NET2-0和3-0" class="headerlink" title="离线安装NETFramework3.5(包括.NET2.0和3.0)"></a>离线安装NETFramework3.5(包括.NET2.0和3.0)</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用于处理在遇到下面这种情况时(图1)，但无法下载所需文件或系统找不到指定的文件(图2或图3)。<br><img src="/img/offlinesetupnet/1.webp"><br><img src="/img/offlinesetupnet/2.webp"><br><img src="/img/offlinesetupnet/3.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><div class="note note-warning">            <p>❗下面根据你的这台电脑正在使用什么系统进行分情况说明</p>          </div><h3 id="1-1-如果是最新版本的Windows11系统"><a href="#1-1-如果是最新版本的Windows11系统" class="headerlink" title="1.1-如果是最新版本的Windows11系统"></a>1.1-如果是<code>最新版本的</code>Windows11系统</h3><p>1.直接去<a href="https://www.microsoft.com/zh-cn/software-download/windows11">官网下载</a>Windows11媒体创建工具<br><img src="/img/offlinesetupnet/4.webp"></p><p>2.打开刚刚下载好的媒体创建工具一直选择下一步，直到下图这个界面，选择<code>ISO文件</code>,在点击下一步后选择ISO文件的保存位置。等待文件下载完毕。<br><img src="/img/offlinesetupnet/5.webp"></p><h3 id="1-2-如果是其他版本的Windows系统"><a href="#1-2-如果是其他版本的Windows系统" class="headerlink" title="1.2-如果是其他版本的Windows系统"></a>1.2-如果是其他版本的Windows系统</h3><p>去<a href="https://msdn.itellyou.cn/">MSDN</a>下载ISO映像,部分版本的Windows10系统映像去<a href="https://next.itellyou.cn/">MSDN的新站</a>下载。</p><blockquote><p>注意！旧站的下载链接是<code>ed2k://</code>格式的电驴下载链接(类似磁力链)，可以用迅雷来下载,新站是用<code>magnet:?xt=urn:btih:</code>格式的磁力链，可以用迅雷或者其他支持磁力链的下载软件下载。</p></blockquote><center> ⬇️旧站⬇️</center><p><img src="/img/offlinesetupnet/6.webp"></p><div class="note note-danger">            <p>❗在进行下一步时，请务必确保你的映像版本与你现在操作系统的版本相匹配。原因见下图。</p>          </div><p><img src="/img/offlinesetupnet/7.webp"></p><blockquote><p>图中的原文链接⬇️</p><p><a href="https://learn.microsoft.com/zh-cn/dotnet/framework/install/dotnet-35-windows%E3%80%82">https://learn.microsoft.com/zh-cn/dotnet/framework/install/dotnet-35-windows。</a></p></blockquote><h3 id="2-添加NETFramework"><a href="#2-添加NETFramework" class="headerlink" title="2-添加NETFramework"></a>2-添加NETFramework</h3><p>1.双击刚才下载好的ISO文件，ISO文件会自动挂载，记住挂载的盘符，如下图(图中的盘符为F:)<br><img src="/img/offlinesetupnet/8.webp"></p><p>2.然后<code>右键</code>任务栏的Windows图标，选择<code>终端管理员</code>(有的可能显示的是<code>powershell管理员</code>)。</p><p><img src="/img/offlinesetupnet/9.webp"></p><p>在打开的窗口输入下面命令。</p><div class="note note-warning">            <p>❗❗❗注意下面命令中<code>F:\sources\sxs</code>里的<code>F:</code>要更换为<code>步骤2.1</code>中所挂载的盘符。</p>          </div><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">dism.exe <span class="hljs-string">/online</span> <span class="hljs-string">/enable-feature</span> <span class="hljs-string">/featurename</span><span class="hljs-function">:netfx3</span> <span class="hljs-string">/Source</span><span class="hljs-function">:F</span>:\sources\sxs<br></code></pre></td></tr></table></figure><p>等待进度条走完，如下图<br><img src="/img/offlinesetupnet/10.webp"></p><p>3.添加完毕后<code>右键</code>刚才挂载的盘，选择弹出。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Windows系统</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>解决Ubuntu在VirtualBox中画面卡顿问题</title>
     <link href="/posts/6218248c.html"/>
     <url>/posts/6218248c.html</url>
