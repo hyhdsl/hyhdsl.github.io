@@ -16,25 +16,34 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="">
+  <meta name="author" content="大食懒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="开启或关闭Windows休眠关闭Windows休眠命令1powercfg -h off 开启Windows休眠命令1powercfg -h on">
+    <meta name="description" content="在Windows中禁用USB选择性挂起前言 USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备  但禁用该功能可以解决一些设备间歇性失灵 禁用方法方法一：使用设备管理器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开启或关闭Windows休眠">
-<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/c5fbb796.html">
+<meta property="og:title" content="在Windows中禁用USB选择性挂起">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/ac65672b.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="开启或关闭Windows休眠关闭Windows休眠命令1powercfg -h off 开启Windows休眠命令1powercfg -h on">
+<meta property="og:description" content="在Windows中禁用USB选择性挂起前言 USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备  但禁用该功能可以解决一些设备间歇性失灵 禁用方法方法一：使用设备管理器">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-22T05:57:21.000Z">
-<meta property="article:modified_time" content="2026-01-09T05:41:46.233Z">
-<meta property="article:tag" content="windows">
-<meta property="article:tag" content="赛博偏方">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/1.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/2.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/3.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/4.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/5.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/6.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/7.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/8.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/9.webp">
+<meta property="article:published_time" content="2026-01-09T05:14:34.000Z">
+<meta property="article:modified_time" content="2026-01-09T06:19:09.471Z">
+<meta property="article:tag" content="系统">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/1.webp">
   
   
   
-  <title>开启或关闭Windows休眠 - 赛博偏方</title>
+  <title>在Windows中禁用USB选择性挂起 - 赛博偏方</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +209,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="开启或关闭Windows休眠"></span>
+            <span id="subtitle" data-typed-text="在Windows中禁用USB选择性挂起"></span>
           
         </div>
 
@@ -208,11 +217,16 @@
           
   <div class="mt-3">
     
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        大食懒
+      </span>
+    
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-22 13:57" pubdate>
-          2025年11月22日 下午
+        <time datetime="2026-01-09 13:14" pubdate>
+          2026年1月9日 下午
         </time>
       </span>
     
@@ -223,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          22 字
+          374 字
         
       </span>
     
@@ -234,7 +248,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -271,7 +285,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">开启或关闭Windows休眠</h1>
+            <h1 id="seo-header">在Windows中禁用USB选择性挂起</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -284,8 +298,18 @@
             
               <div class="markdown-body">
                 
-                <h1 id="开启或关闭Windows休眠"><a href="#开启或关闭Windows休眠" class="headerlink" title="开启或关闭Windows休眠"></a>开启或关闭Windows休眠</h1><h3 id="关闭Windows休眠命令"><a href="#关闭Windows休眠命令" class="headerlink" title="关闭Windows休眠命令"></a>关闭Windows休眠命令</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h off<br></code></pre></td></tr></table></figure>
-<h3 id="开启Windows休眠命令"><a href="#开启Windows休眠命令" class="headerlink" title="开启Windows休眠命令"></a>开启Windows休眠命令</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h on<br></code></pre></td></tr></table></figure>
+                <h1 id="在Windows中禁用USB选择性挂起"><a href="#在Windows中禁用USB选择性挂起" class="headerlink" title="在Windows中禁用USB选择性挂起"></a>在Windows中禁用USB选择性挂起</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备</p>
+</blockquote>
+<p>但禁用该功能可以解决一些设备间歇性失灵</p>
+<h2 id="禁用方法"><a href="#禁用方法" class="headerlink" title="禁用方法"></a>禁用方法</h2><h3 id="方法一：使用设备管理器禁用"><a href="#方法一：使用设备管理器禁用" class="headerlink" title="方法一：使用设备管理器禁用"></a>方法一：使用设备管理器禁用</h3><p>1.<code>右键</code>任务栏的<code>Windows图标</code>(或者使用快捷键win+x)，然后从上下文菜单中选择设备管理器<br><img src="/img/USBselectivesuspend/1.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2.找到<code>通用串行总线控制器</code>并展开，再找到<code>通用USB集线器</code>或<code>USB根集线器</code>，<code>右键</code>然后选择<code>属性</code>。<br><img src="/img/USBselectivesuspend/2.webp" srcset="/img/loading.gif" lazyload></p>
+<p>3.切换到<code>电源管理选项卡</code>，然后<code>取消选中允许计算机关闭此设备以节省电量选项</code>。单击确定保存更改。<br><img src="/img/USBselectivesuspend/3.webp" srcset="/img/loading.gif" lazyload></p>
+<p>4.重复以上步骤禁用其他USB</p>
+<h3 id="方法二：使用控制面板中的电源选项"><a href="#方法二：使用控制面板中的电源选项" class="headerlink" title="方法二：使用控制面板中的电源选项"></a>方法二：使用控制面板中的电源选项</h3><p>1.按<code>Win键</code>打开开始菜单，，在<code>搜索框</code>中搜索<code>控制面板</code>。<br><img src="/img/USBselectivesuspend/4.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2.在控制面板依次选择<code>硬件和声音&gt;电源选项&gt;更改计划设置&gt;更改高级电源设置</code>，如下图。<br><img src="/img/USBselectivesuspend/5.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/6.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/7.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/8.webp" srcset="/img/loading.gif" lazyload></p>
+<p>3.在打开的窗口中依次选择<code>USB设置&gt;USB选择性暂停设置</code>，根据需要选择性禁用，如下图。<br><img src="/img/USBselectivesuspend/9.webp" srcset="/img/loading.gif" lazyload></p>
+
                 
               </div>
             
@@ -318,9 +342,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/" class="print-no-link">#赛博偏方</a>
-      
-        <a href="/tags/windows/" class="print-no-link">#windows</a>
+        <a href="/tags/%E7%B3%BB%E7%BB%9F/" class="print-no-link">#系统</a>
       
     </div>
   
@@ -332,18 +354,39 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>开启或关闭Windows休眠</div>
-      <div>https://blog.nekobiglazyer.work/posts/c5fbb796.html</div>
+      <div>在Windows中禁用USB选择性挂起</div>
+      <div>https://blog.nekobiglazyer.work/posts/ac65672b.html</div>
     </div>
     <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>大食懒</div>
+        </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年11月22日</div>
+          <div>2026年1月9日</div>
         </div>
       
       
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
       
     </div>
     <div class="license-icon iconfont"></div>
@@ -356,18 +399,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/aae0376c.html" title="将Windows11右键菜单改为Windows10的样子">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">将Windows11右键菜单改为Windows10的样子</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/843258ad.html" title="windows家庭版添加策略组">
-                        <span class="hidden-mobile">windows家庭版添加策略组</span>
+                      <a href="/posts/abaebcec.html" title="离线安装NETFramework3.5(包括.NET2.0和3.0)">
+                        <span class="hidden-mobile">离线安装NETFramework3.5(包括.NET2.0和3.0)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

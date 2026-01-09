@@ -19,15 +19,15 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-    <meta name="description" content="将Windows11右键菜单改为Windows10的样子复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12reg add &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;\InprocServer32&quot; &#x2F;f &#x2F;vetaskkill &#x2F;f &#x2F;im e">
+    <meta name="description" content="将Windows11右键菜单改为Windows10的样子将Windows11右键菜单改为Windows10的样子复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12reg add &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;\InprocServer32&amp;q">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将Windows11右键菜单改为Windows10的样子">
 <meta property="og:url" content="https://blog.nekobiglazyer.work/posts/aae0376c.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="将Windows11右键菜单改为Windows10的样子复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12reg add &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;\InprocServer32&quot; &#x2F;f &#x2F;vetaskkill &#x2F;f &#x2F;im e">
+<meta property="og:description" content="将Windows11右键菜单改为Windows10的样子将Windows11右键菜单改为Windows10的样子复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12reg add &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;\InprocServer32&amp;q">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-22T06:00:48.000Z">
-<meta property="article:modified_time" content="2025-11-24T09:45:59.176Z">
+<meta property="article:modified_time" content="2026-01-09T05:41:01.265Z">
 <meta property="article:tag" content="windows">
 <meta property="article:tag" content="赛博偏方">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          87 字
+          97 字
         
       </span>
     
@@ -276,7 +276,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年11月24日 下午
+                    本文最后更新于 2026年1月9日 下午
                   
                 
               </p>
@@ -284,11 +284,11 @@
             
               <div class="markdown-body">
                 
-                <h1 id="将Windows11右键菜单改为Windows10的样子"><a href="#将Windows11右键菜单改为Windows10的样子" class="headerlink" title="将Windows11右键菜单改为Windows10的样子"></a>将Windows11右键菜单改为Windows10的样子</h1><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p>
+                <h1 id="将Windows11右键菜单改为Windows10的样子"><a href="#将Windows11右键菜单改为Windows10的样子" class="headerlink" title="将Windows11右键菜单改为Windows10的样子"></a>将Windows11右键菜单改为Windows10的样子</h1><h3 id="将Windows11右键菜单改为Windows10的样子-1"><a href="#将Windows11右键菜单改为Windows10的样子-1" class="headerlink" title="将Windows11右键菜单改为Windows10的样子"></a>将Windows11右键菜单改为Windows10的样子</h3><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p>
 <p>然后右键以管理员身份运行</p>
 <figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg add &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;\InprocServer32&quot; /f /ve<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe<br></code></pre></td></tr></table></figure>
 
-<h1 id="还原成Windows11样式"><a href="#还原成Windows11样式" class="headerlink" title="还原成Windows11样式"></a>还原成Windows11样式</h1><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;&quot; /f<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe <br></code></pre></td></tr></table></figure>
+<h3 id="还原成Windows11样式"><a href="#还原成Windows11样式" class="headerlink" title="还原成Windows11样式"></a>还原成Windows11样式</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;&quot; /f<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe <br></code></pre></td></tr></table></figure>
                 
               </div>
             
