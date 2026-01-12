@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>解决虚拟机安装Windows98报错</title>
+    <link href="/posts/3095cfe4.html"/>
+    <url>/posts/3095cfe4.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="解决虚拟机安装Windows98报错"><a href="#解决虚拟机安装Windows98报错" class="headerlink" title="解决虚拟机安装Windows98报错"></a>解决虚拟机安装Windows98报错</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用于解决在虚拟机安装Windows98时遇到下列错误。</p><p>1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL</p><p>2️⃣该程序执行了非法操作，即将关闭。<br>EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH<br><img src="/img/vboxwin98/1.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="一、补丁下载"><a href="#一、补丁下载" class="headerlink" title="一、补丁下载"></a>一、补丁下载</h3><blockquote><p>在GitHub下载<br><a href="https://github.com/JHRobotics/patcher9x/releases">https://github.com/JHRobotics/patcher9x/releases</a></p></blockquote><p><img src="/img/vboxwin98/github.webp"></p><h3 id="二、安装补丁"><a href="#二、安装补丁" class="headerlink" title="二、安装补丁"></a>二、安装补丁</h3><p>1.在虚拟机中选用软盘，加载补丁。同时将软盘设置为第一启动项。<br><img src="/img/vboxwin98/vbox.webp"></p><p>2.启动虚拟机，选择第1项。⬇️<br><img src="/img/vboxwin98/2.webp"></p><p>3.输入 <code>patch9x</code> ，按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp"></p><p>4.出现<code>[C:\Windows\System]:</code>时按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp"></p><p>5.出现<code>Choose(0-4):</code>时输入<code>1</code>,按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/4.webp"></p><p>6.出现<code>Apply patch/patches? (Y - Yes, N -No, M - print moreinformation): </code>时输入<code>Y</code>。⬇️<br><img src="/img/vboxwin98/5.webp"></p><p>7.出现<code>Press enter to exit...</code>时按任意键退出补丁。⬇️<br><img src="/img/vboxwin98/6.webp"></p><p>8.重启虚拟机</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+      <tag>虚拟机</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>在Windows中禁用USB选择性挂起</title>
     <link href="/posts/ac65672b.html"/>
     <url>/posts/ac65672b.html</url>

@@ -19,31 +19,32 @@
   <meta name="author" content="大食懒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在Windows中禁用USB选择性挂起前言 USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备  但禁用该功能可以解决一些设备间歇性失灵 禁用方法方法一：使用设备管理器">
+    <meta name="description" content="解决虚拟机安装Windows98报错前言本文用于解决在虚拟机安装Windows98时遇到下列错误。 1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL 2️⃣该程序执行了非法操作，即将关闭。EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH 解决方法一、补丁下载 在GitHub下载https:&#x2F;&#x2F;github.com&#x2F;JHRobo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在Windows中禁用USB选择性挂起">
-<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/ac65672b.html">
+<meta property="og:title" content="解决虚拟机安装Windows98报错">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/3095cfe4.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="在Windows中禁用USB选择性挂起前言 USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备  但禁用该功能可以解决一些设备间歇性失灵 禁用方法方法一：使用设备管理器">
+<meta property="og:description" content="解决虚拟机安装Windows98报错前言本文用于解决在虚拟机安装Windows98时遇到下列错误。 1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL 2️⃣该程序执行了非法操作，即将关闭。EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH 解决方法一、补丁下载 在GitHub下载https:&#x2F;&#x2F;github.com&#x2F;JHRobo">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/1.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/2.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/3.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/4.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/5.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/6.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/7.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/8.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/9.webp">
-<meta property="article:published_time" content="2026-01-09T05:14:34.000Z">
-<meta property="article:modified_time" content="2026-01-09T06:19:09.471Z">
-<meta property="article:tag" content="系统">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/1.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/github.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/vbox.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/2.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/3.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/3.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/4.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/5.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/6.webp">
+<meta property="article:published_time" content="2026-01-12T06:23:07.000Z">
+<meta property="article:modified_time" content="2026-01-12T10:02:18.004Z">
+<meta property="article:tag" content="Windows">
+<meta property="article:tag" content="虚拟机">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/1.webp">
+<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/1.webp">
   
   
   
-  <title>在Windows中禁用USB选择性挂起 - 赛博偏方</title>
+  <title>解决虚拟机安装Windows98报错 - 赛博偏方</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在Windows中禁用USB选择性挂起"></span>
+            <span id="subtitle" data-typed-text="解决虚拟机安装Windows98报错"></span>
           
         </div>
 
@@ -225,8 +226,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-01-09 13:14" pubdate>
-          2026年1月9日 下午
+        <time datetime="2026-01-12 14:23" pubdate>
+          2026年1月12日 下午
         </time>
       </span>
     
@@ -237,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          374 字
+          197 字
         
       </span>
     
@@ -248,7 +249,7 @@
         
         
         
-          4 分钟
+          2 分钟
         
       </span>
     
@@ -285,12 +286,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在Windows中禁用USB选择性挂起</h1>
+            <h1 id="seo-header">解决虚拟机安装Windows98报错</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2026年1月9日 下午
+                    本文最后更新于 2026年1月12日 晚上
                   
                 
               </p>
@@ -298,17 +299,21 @@
             
               <div class="markdown-body">
                 
-                <h1 id="在Windows中禁用USB选择性挂起"><a href="#在Windows中禁用USB选择性挂起" class="headerlink" title="在Windows中禁用USB选择性挂起"></a>在Windows中禁用USB选择性挂起</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备</p>
+                <h1 id="解决虚拟机安装Windows98报错"><a href="#解决虚拟机安装Windows98报错" class="headerlink" title="解决虚拟机安装Windows98报错"></a>解决虚拟机安装Windows98报错</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用于解决在虚拟机安装Windows98时遇到下列错误。</p>
+<p>1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL</p>
+<p>2️⃣该程序执行了非法操作，即将关闭。<br>EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH<br><img src="/img/vboxwin98/1.webp" srcset="/img/loading.gif" lazyload></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="一、补丁下载"><a href="#一、补丁下载" class="headerlink" title="一、补丁下载"></a>一、补丁下载</h3><blockquote>
+<p>在GitHub下载<br><a target="_blank" rel="noopener" href="https://github.com/JHRobotics/patcher9x/releases">https://github.com/JHRobotics/patcher9x/releases</a></p>
 </blockquote>
-<p>但禁用该功能可以解决一些设备间歇性失灵</p>
-<h2 id="禁用方法"><a href="#禁用方法" class="headerlink" title="禁用方法"></a>禁用方法</h2><h3 id="方法一：使用设备管理器禁用"><a href="#方法一：使用设备管理器禁用" class="headerlink" title="方法一：使用设备管理器禁用"></a>方法一：使用设备管理器禁用</h3><p>1.<code>右键</code>任务栏的<code>Windows图标</code>(或者使用快捷键win+x)，然后从上下文菜单中选择设备管理器<br><img src="/img/USBselectivesuspend/1.webp" srcset="/img/loading.gif" lazyload></p>
-<p>2.找到<code>通用串行总线控制器</code>并展开，再找到<code>通用USB集线器</code>或<code>USB根集线器</code>，<code>右键</code>然后选择<code>属性</code>。<br><img src="/img/USBselectivesuspend/2.webp" srcset="/img/loading.gif" lazyload></p>
-<p>3.切换到<code>电源管理选项卡</code>，然后<code>取消选中允许计算机关闭此设备以节省电量选项</code>。单击确定保存更改。<br><img src="/img/USBselectivesuspend/3.webp" srcset="/img/loading.gif" lazyload></p>
-<p>4.重复以上步骤禁用其他USB</p>
-<h3 id="方法二：使用控制面板中的电源选项"><a href="#方法二：使用控制面板中的电源选项" class="headerlink" title="方法二：使用控制面板中的电源选项"></a>方法二：使用控制面板中的电源选项</h3><p>1.按<code>Win键</code>打开开始菜单，，在<code>搜索框</code>中搜索<code>控制面板</code>。<br><img src="/img/USBselectivesuspend/4.webp" srcset="/img/loading.gif" lazyload></p>
-<p>2.在控制面板依次选择<code>硬件和声音&gt;电源选项&gt;更改计划设置&gt;更改高级电源设置</code>，如下图。<br><img src="/img/USBselectivesuspend/5.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/6.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/7.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/8.webp" srcset="/img/loading.gif" lazyload></p>
-<p>3.在打开的窗口中依次选择<code>USB设置&gt;USB选择性暂停设置</code>，根据需要选择性禁用，如下图。<br><img src="/img/USBselectivesuspend/9.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/vboxwin98/github.webp" srcset="/img/loading.gif" lazyload></p>
+<h3 id="二、安装补丁"><a href="#二、安装补丁" class="headerlink" title="二、安装补丁"></a>二、安装补丁</h3><p>1.在虚拟机中选用软盘，加载补丁。同时将软盘设置为第一启动项。<br><img src="/img/vboxwin98/vbox.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2.启动虚拟机，选择第1项。⬇️<br><img src="/img/vboxwin98/2.webp" srcset="/img/loading.gif" lazyload></p>
+<p>3.输入 <code>patch9x</code> ，按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp" srcset="/img/loading.gif" lazyload></p>
+<p>4.出现<code>[C:\Windows\System]:</code>时按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp" srcset="/img/loading.gif" lazyload></p>
+<p>5.出现<code>Choose(0-4):</code>时输入<code>1</code>,按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/4.webp" srcset="/img/loading.gif" lazyload></p>
+<p>6.出现<code>Apply patch/patches? (Y - Yes, N -No, M - print moreinformation): </code>时输入<code>Y</code>。⬇️<br><img src="/img/vboxwin98/5.webp" srcset="/img/loading.gif" lazyload></p>
+<p>7.出现<code>Press enter to exit...</code>时按任意键退出补丁。⬇️<br><img src="/img/vboxwin98/6.webp" srcset="/img/loading.gif" lazyload></p>
+<p>8.重启虚拟机</p>
 
                 
               </div>
@@ -327,7 +332,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/" class="category-chain-item">Windows系统</a>
+  <a href="/categories/Windows/" class="category-chain-item">Windows</a>
   
   
 
@@ -342,7 +347,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%B3%BB%E7%BB%9F/" class="print-no-link">#系统</a>
+        <a href="/tags/Windows/" class="print-no-link">#Windows</a>
+      
+        <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" class="print-no-link">#虚拟机</a>
       
     </div>
   
@@ -354,8 +361,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在Windows中禁用USB选择性挂起</div>
-      <div>https://blog.nekobiglazyer.work/posts/ac65672b.html</div>
+      <div>解决虚拟机安装Windows98报错</div>
+      <div>https://blog.nekobiglazyer.work/posts/3095cfe4.html</div>
     </div>
     <div class="license-meta">
       
@@ -367,7 +374,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年1月9日</div>
+          <div>2026年1月12日</div>
         </div>
       
       
@@ -399,18 +406,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/3095cfe4.html" title="解决虚拟机安装Windows98报错">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">解决虚拟机安装Windows98报错</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/abaebcec.html" title="离线安装NETFramework3.5(包括.NET2.0和3.0)">
-                        <span class="hidden-mobile">离线安装NETFramework3.5(包括.NET2.0和3.0)</span>
+                      <a href="/posts/ac65672b.html" title="在Windows中禁用USB选择性挂起">
+                        <span class="hidden-mobile">在Windows中禁用USB选择性挂起</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
