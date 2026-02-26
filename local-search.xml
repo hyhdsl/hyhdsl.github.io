@@ -8,7 +8,7 @@
     <link href="/posts/e7b6c365.html"/>
     <url>/posts/e7b6c365.html</url>
     
-    <content type="html"><![CDATA[<h1 id="在Steam客户端里安装SteamDB插件"><a href="#在Steam客户端里安装SteamDB插件" class="headerlink" title="在Steam客户端里安装SteamDB插件"></a>在Steam客户端里安装SteamDB插件</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>Steam客户端本身就是一个Chromium内核的浏览器 ，所以它可以像Chrome浏览器一样安装插件。</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>自行准备VPN(中国大陆用户需要)</p><h2 id="打开插件管理界面"><a href="#打开插件管理界面" class="headerlink" title="打开插件管理界面"></a>打开插件管理界面</h2><p>1.打开你的steam客户端到商店页面。<code>右键</code>任意一款游戏，选择在<code>新选项卡中打开链接</code></p><p><img src="/img/steamsetupsteamdb/1.webp"></p><p>2.在打开页面中的网址栏输入<code>chrome://extensions</code>然后按<code>Enter键</code>进入插件管理界面</p><p><img src="/img/steamsetupsteamdb/2.webp"></p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>1.连上你的VPN，点击Chrome应用商店</p><p><img src="/img/steamsetupsteamdb/3.webp"></p><p>2.在新打开的页面里的<code>搜索框</code>搜索<code>steamDB</code></p><p><img src="/img/steamsetupsteamdb/4.webp"></p><p>3.点添加至Chrome</p><p><img src="/img/steamsetupsteamdb/5.webp"></p><p>4.在打开的确认窗口选<code>添加扩展程序</code></p><p><img src="/img/steamsetupsteamdb/6.webp"></p><p>7.这时会弹出一个保存窗口。随便选个地方</p><p><img src="/img/steamsetupsteamdb/7.webp"></p><p>8.安装好之后会弹出一个steamDB设置界面，自行按照需要设置，设置好后关闭界面</p><p><img src="/img/steamsetupsteamdb/8.webp"></p><h2 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h2><p>随便进入一个游戏的商店页面，出现下图所示的内容说明安装好了</p><p><img src="/img/steamsetupsteamdb/9.webp"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="在Steam客户端里安装SteamDB插件"><a href="#在Steam客户端里安装SteamDB插件" class="headerlink" title="在Steam客户端里安装SteamDB插件"></a>在Steam客户端里安装SteamDB插件</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>Steam客户端本身就是一个Chromium内核的浏览器 ，所以它可以像Chrome浏览器一样安装插件。</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>自行准备VPN(中国大陆用户需要)</p><h2 id="打开插件管理界面"><a href="#打开插件管理界面" class="headerlink" title="打开插件管理界面"></a>打开插件管理界面</h2><p>1.打开你的steam客户端到商店页面。<code>右键</code>任意一款游戏，选择在<code>新选项卡中打开链接</code></p><p><img src="/img/steamsetupsteamdb/1.webp"></p><p>2.在打开页面中的网址栏输入<code>chrome://extensions</code>然后按<code>Enter键</code>进入插件管理界面</p><p><img src="/img/steamsetupsteamdb/2.webp"></p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>1.连上你的VPN，点击Chrome应用商店</p><p><img src="/img/steamsetupsteamdb/3.webp"></p><p>2.在新打开的页面里的<code>搜索框</code>搜索<code>steamDB</code></p><p><img src="/img/steamsetupsteamdb/4.webp"></p><p>3.点<code>添加至Chrome</code></p><p><img src="/img/steamsetupsteamdb/5.webp"></p><p>4.在打开的确认窗口选<code>添加扩展程序</code></p><p><img src="/img/steamsetupsteamdb/6.webp"></p><p>7.这时会弹出一个保存窗口。随便选个地方</p><p><img src="/img/steamsetupsteamdb/7.webp"></p><p>8.安装好之后会弹出一个SteamDB设置界面，自行按照需要设置，设置好后关闭界面</p><p><img src="/img/steamsetupsteamdb/8.webp"></p><h2 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h2><p>随便进入一个游戏的商店页面，出现下图所示的内容说明安装好了</p><p><img src="/img/steamsetupsteamdb/9.webp"></p>]]></content>
     
     
     <categories>
@@ -153,9 +153,9 @@
       
       <tag>赛博偏方</tag>
       
-      <tag>软件</tag>
-      
       <tag>steam</tag>
+      
+      <tag>软件</tag>
       
     </tags>
     
