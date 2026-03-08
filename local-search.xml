@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>解决steam游戏备份无法删除的问题</title>
+    <link href="/posts/4980da73.html"/>
+    <url>/posts/4980da73.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="解决steam游戏备份无法删除的问题"><a href="#解决steam游戏备份无法删除的问题" class="headerlink" title="解决steam游戏备份无法删除的问题"></a>解决steam游戏备份无法删除的问题</h1><h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><p>这个问题出现在下面的steam版本中</p><p><img src="/img/delsteambackup/0.webp"></p><p>在备份steam游戏文件时会出现备份文件无法删除的情况</p><p><img src="/img/delsteambackup/3.webp"></p><h2 id="问题复现"><a href="#问题复现" class="headerlink" title="问题复现"></a>问题复现</h2><p>1.备份游戏文件(此处以R.E.P.O游戏为例)</p><p><img src="/img/delsteambackup/1.webp"></p><p>2.当尝试打开备份文件或删除备份文件时会出现以下错误</p><p><img src="/img/delsteambackup/2.webp"></p><p><img src="/img/delsteambackup/3.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>使用<code>rmdir</code>命令删除文件夹</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">rmdir</span> /s &lt;路径&gt;<br></code></pre></td></tr></table></figure><p>例子如下图(由于我这个命令窗口是在备份文件夹的父目录打开的，所以不用输入完整路径)</p><p><img src="/img/delsteambackup/4.webp"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>steam</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>在Steam客户端里安装SteamDB插件</title>
     <link href="/posts/e7b6c365.html"/>
     <url>/posts/e7b6c365.html</url>
