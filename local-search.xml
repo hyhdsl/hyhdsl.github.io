@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>解决无权打开组策略问题</title>
+    <link href="/posts/4ea3d027.html"/>
+    <url>/posts/4ea3d027.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="解决无权打开组策略问题"><a href="#解决无权打开组策略问题" class="headerlink" title="解决无权打开组策略问题"></a>解决无权打开组策略问题</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本教程适用于下图中组策略无法使用的情况</p><p><code>无法打开此计算机上的组策略对象。你可能没有相应的权限</code></p><p><img src="/img/grouppolicyaccessdenied/1.webp"></p><p><img src="/img/grouppolicyaccessdenied/2.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>打开<code>C:\Windows\System32\GroupPolicy</code>，查看目录下是否有<code>Machine</code>文件夹。</p><p>如果有Machine文件夹，❗备份该文件夹❗，然后删除<code>Machine</code>文件夹，再新建<code>Machine</code>文件夹。</p><p>如果没有，直接新建<code>Machine</code>文件夹</p><p><img src="/img/grouppolicyaccessdenied/3.webp"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Windows系统</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>解决steam游戏备份无法删除的问题</title>
     <link href="/posts/4980da73.html"/>
     <url>/posts/4980da73.html</url>
