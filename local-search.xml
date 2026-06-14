@@ -8,7 +8,7 @@
     <link href="/posts/c9da0c7e.html"/>
     <url>/posts/c9da0c7e.html</url>
     
-    <content type="html"><![CDATA[<h1 id="解决Google-Play商店无法下载或更新应用的问题"><a href="#解决Google-Play商店无法下载或更新应用的问题" class="headerlink" title="解决Google Play商店无法下载或更新应用的问题"></a>解决Google Play商店无法下载或更新应用的问题</h1><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>下面这条域名走代理</p><p><code>googleapis.com</code></p><p>再让下面两条域名同时走代理或直连</p><p><code>xn--ngstr-lra8j.com</code></p><p><code>services.googleapis.cn</code></p><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p>本文由下面4位大佬的文章整理而成，感谢4位大佬提供的方法<br><a href="https://www.cesaryuan.top/post/the-solution-of-the-time-when-google-play-installed-the-app-has-been-waiting-zfom8e">https://www.cesaryuan.top/post/the-solution-of-the-time-when-google-play-installed-the-app-has-been-waiting-zfom8e</a></p><p><a href="https://www.yetpage.com/archives/278">https://www.yetpage.com/archives/278</a></p><p><a href="https://zhuanlan.zhihu.com/p/1971238106364621331">https://zhuanlan.zhihu.com/p/1971238106364621331</a></p><p><a href="https://blog.l3zc.com/2025/03/chinese-cdn-used-by-playstore/">https://blog.l3zc.com/2025/03/chinese-cdn-used-by-playstore/</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="解决Google-Play商店无法下载或更新应用的问题"><a href="#解决Google-Play商店无法下载或更新应用的问题" class="headerlink" title="解决Google Play商店无法下载或更新应用的问题"></a>解决Google Play商店无法下载或更新应用的问题</h1><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>下面这条域名走代理</p><p><code>services.googleapis.com</code></p><p>再让下面两条域名同时走代理或直连</p><p><code>xn--ngstr-lra8j.com</code></p><p><code>services.googleapis.cn</code></p><p><img src="/img/googleplaydownload/1.webp"></p><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p>本文由下面4位大佬的文章整理而成，感谢4位大佬提供的方法<br><a href="https://blog.l3zc.com/2025/03/chinese-cdn-used-by-playstore/">https://blog.l3zc.com/2025/03/chinese-cdn-used-by-playstore/</a></p><p><a href="https://www.cesaryuan.top/post/the-solution-of-the-time-when-google-play-installed-the-app-has-been-waiting-zfom8e">https://www.cesaryuan.top/post/the-solution-of-the-time-when-google-play-installed-the-app-has-been-waiting-zfom8e</a></p><p><a href="https://www.yetpage.com/archives/278">https://www.yetpage.com/archives/278</a></p><p><a href="https://zhuanlan.zhihu.com/p/1971238106364621331">https://zhuanlan.zhihu.com/p/1971238106364621331</a></p>]]></content>
     
     
     <categories>
@@ -226,9 +226,9 @@
     
     <tags>
       
-      <tag>赛博偏方</tag>
-      
       <tag>软件</tag>
+      
+      <tag>赛博偏方</tag>
       
       <tag>steam</tag>
       
@@ -307,11 +307,11 @@
     
     <tags>
       
-      <tag>赛博偏方</tag>
-      
       <tag>软件</tag>
       
       <tag>HEVC</tag>
+      
+      <tag>赛博偏方</tag>
       
     </tags>
     
