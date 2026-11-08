@@ -5,8 +5,8 @@
   
   <entry>
     <title>解决Google Play商店无法下载或更新应用的问题</title>
-    <link href="/posts/c9da0c7e.html"/>
-    <url>/posts/c9da0c7e.html</url>
+    <link href="/posts/d7058df7.html"/>
+    <url>/posts/d7058df7.html</url>
     
     <content type="html"><![CDATA[<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>下面这条域名走代理</p><p><code>services.googleapis.com</code></p><p>再让下面两条域名同时走代理或直连</p><p><code>xn--ngstr-lra8j.com</code></p><p><code>services.googleapis.cn</code></p><p><img src="/img/googleplaydownload/1.webp"></p><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p>本文由下面4位大佬的文章整理而成，感谢4位大佬提供的方法<br><a href="https://blog.l3zc.com/2025/03/chinese-cdn-used-by-playstore/">https://blog.l3zc.com/2025/03/chinese-cdn-used-by-playstore/</a></p><p><a href="https://www.cesaryuan.top/post/the-solution-of-the-time-when-google-play-installed-the-app-has-been-waiting-zfom8e">https://www.cesaryuan.top/post/the-solution-of-the-time-when-google-play-installed-the-app-has-been-waiting-zfom8e</a></p><p><a href="https://www.yetpage.com/archives/278">https://www.yetpage.com/archives/278</a></p><p><a href="https://zhuanlan.zhihu.com/p/1971238106364621331">https://zhuanlan.zhihu.com/p/1971238106364621331</a></p>]]></content>
     
@@ -34,8 +34,8 @@
   
   <entry>
     <title>解决无权打开组策略问题</title>
-    <link href="/posts/4ea3d027.html"/>
-    <url>/posts/4ea3d027.html</url>
+    <link href="/posts/cc450914.html"/>
+    <url>/posts/cc450914.html</url>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本教程适用于下图中组策略无法使用的情况</p><p><code>无法打开此计算机上的组策略对象。你可能没有相应的权限</code></p><p><img src="/img/grouppolicyaccessdenied/1.webp"></p><p><img src="/img/grouppolicyaccessdenied/2.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>打开<code>C:\Windows\System32\GroupPolicy</code>，查看目录下是否有<code>Machine</code>文件夹。</p><p>如果有Machine文件夹，❗备份该文件夹❗，然后删除<code>Machine</code>文件夹，再新建<code>Machine</code>文件夹。</p><p>如果没有，直接新建<code>Machine</code>文件夹</p><p><img src="/img/grouppolicyaccessdenied/3.webp"></p>]]></content>
     
@@ -63,8 +63,8 @@
   
   <entry>
     <title>解决steam游戏备份无法删除的问题</title>
-    <link href="/posts/4980da73.html"/>
-    <url>/posts/4980da73.html</url>
+    <link href="/posts/2d22a3e7.html"/>
+    <url>/posts/2d22a3e7.html</url>
     
     <content type="html"><![CDATA[<h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><p>这个问题出现在下面的steam版本中</p><p><img src="/img/delsteambackup/0.webp"></p><p>在备份steam游戏文件时会出现备份文件无法删除的情况</p><p><img src="/img/delsteambackup/3.webp"></p><h2 id="问题复现"><a href="#问题复现" class="headerlink" title="问题复现"></a>问题复现</h2><p>1.备份游戏文件(此处以R.E.P.O游戏为例)</p><p><img src="/img/delsteambackup/1.webp"></p><p>2.当尝试打开备份文件或删除备份文件时会出现以下错误</p><p><img src="/img/delsteambackup/2.webp"></p><p><img src="/img/delsteambackup/3.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>使用<code>rmdir</code>命令删除文件夹</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">rmdir</span> /s &lt;路径&gt;<br></code></pre></td></tr></table></figure><p>例子如下图(由于我这个命令窗口是在备份文件夹的父目录打开的，所以不用输入完整路径)</p><p><img src="/img/delsteambackup/4.webp"></p>]]></content>
     
@@ -90,8 +90,8 @@
   
   <entry>
     <title>在Steam客户端里安装SteamDB插件</title>
-    <link href="/posts/e7b6c365.html"/>
-    <url>/posts/e7b6c365.html</url>
+    <link href="/posts/e79abca2.html"/>
+    <url>/posts/e79abca2.html</url>
     
     <content type="html"><![CDATA[<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>Steam客户端本身就是一个Chromium内核的浏览器 ，所以它可以像Chrome浏览器一样安装插件。</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>自行准备VPN(中国大陆用户需要)</p><h2 id="打开插件管理界面"><a href="#打开插件管理界面" class="headerlink" title="打开插件管理界面"></a>打开插件管理界面</h2><p>1.打开你的steam客户端到商店页面。<code>右键</code>任意一款游戏，选择在<code>新选项卡中打开链接</code></p><p><img src="/img/steamsetupsteamdb/1.webp"></p><p>2.在打开页面中的网址栏输入<code>chrome://extensions</code>然后按<code>Enter键</code>进入插件管理界面</p><p><img src="/img/steamsetupsteamdb/2.webp"></p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>1.连上你的VPN，点击Chrome应用商店</p><p><img src="/img/steamsetupsteamdb/3.webp"></p><p>2.在新打开的页面里的<code>搜索框</code>搜索<code>steamDB</code></p><p><img src="/img/steamsetupsteamdb/4.webp"></p><p>3.点<code>添加至Chrome</code></p><p><img src="/img/steamsetupsteamdb/5.webp"></p><p>4.在打开的确认窗口选<code>添加扩展程序</code></p><p><img src="/img/steamsetupsteamdb/6.webp"></p><p>7.这时会弹出一个保存窗口。随便选个地方</p><p><img src="/img/steamsetupsteamdb/7.webp"></p><p>8.安装好之后会弹出一个SteamDB设置界面，自行按照需要设置，设置好后关闭界面</p><p><img src="/img/steamsetupsteamdb/8.webp"></p><h2 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h2><p>随便进入一个游戏的商店页面，出现下图所示的内容说明安装好了</p><p><img src="/img/steamsetupsteamdb/9.webp"></p>]]></content>
     
@@ -119,8 +119,8 @@
   
   <entry>
     <title>解决虚拟机安装Windows98报错</title>
-    <link href="/posts/3095cfe4.html"/>
-    <url>/posts/3095cfe4.html</url>
+    <link href="/posts/1c7ef172.html"/>
+    <url>/posts/1c7ef172.html</url>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用于解决在虚拟机安装Windows98时遇到下列错误。</p><p>1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL</p><p>2️⃣该程序执行了非法操作，即将关闭。<br>EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH<br><img src="/img/vboxwin98/1.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1. 下载补丁"></a>1. 下载补丁</h3><blockquote><p>在GitHub下载<br><a href="https://github.com/JHRobotics/patcher9x/releases">https://github.com/JHRobotics/patcher9x/releases</a></p></blockquote><p><img src="/img/vboxwin98/github.webp"></p><h3 id="2-安装补丁"><a href="#2-安装补丁" class="headerlink" title="2. 安装补丁"></a>2. 安装补丁</h3><p>1.在虚拟机中选用软盘，加载补丁。同时将软盘设置为第一启动项。<br><img src="/img/vboxwin98/vbox.webp"></p><p>2.启动虚拟机，选择第1项。⬇️<br><img src="/img/vboxwin98/2.webp"></p><p>3.输入 <code>patch9x</code> ，按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp"></p><p>4.出现<code>[C:\Windows\System]:</code>时按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp"></p><p>5.出现<code>Choose(0-4):</code>时输入<code>1</code>,按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/4.webp"></p><p>6.出现<code>Apply patch/patches? (Y - Yes, N -No, M - print moreinformation): </code>时输入<code>Y</code>。⬇️<br><img src="/img/vboxwin98/5.webp"></p><p>7.出现<code>Press enter to exit...</code>时按任意键退出补丁。⬇️<br><img src="/img/vboxwin98/6.webp"></p><p>8.重启虚拟机到硬盘，不要进光盘的安装程序，继续剩下的安装。</p>]]></content>
     
@@ -148,8 +148,8 @@
   
   <entry>
     <title>在Windows中禁用USB选择性挂起</title>
-    <link href="/posts/ac65672b.html"/>
-    <url>/posts/ac65672b.html</url>
+    <link href="/posts/a2199bca.html"/>
+    <url>/posts/a2199bca.html</url>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备</p></blockquote><p>但禁用该功能可以解决一些设备间歇性失灵</p><h2 id="禁用方法"><a href="#禁用方法" class="headerlink" title="禁用方法"></a>禁用方法</h2><h3 id="方法一：使用设备管理器禁用"><a href="#方法一：使用设备管理器禁用" class="headerlink" title="方法一：使用设备管理器禁用"></a>方法一：使用设备管理器禁用</h3><p>1.<code>右键</code>任务栏的<code>Windows图标</code>(或者使用快捷键win+x)，然后从上下文菜单中选择设备管理器<br><img src="/img/USBselectivesuspend/1.webp"></p><p>2.找到<code>通用串行总线控制器</code>并展开，再找到<code>通用USB集线器</code>或<code>USB根集线器</code>，<code>右键</code>然后选择<code>属性</code>。<br><img src="/img/USBselectivesuspend/2.webp"></p><p>3.切换到<code>电源管理选项卡</code>，然后<code>取消选中允许计算机关闭此设备以节省电量选项</code>。单击确定保存更改。<br><img src="/img/USBselectivesuspend/3.webp"></p><p>4.重复以上步骤禁用其他USB</p><h3 id="方法二：使用控制面板中的电源选项"><a href="#方法二：使用控制面板中的电源选项" class="headerlink" title="方法二：使用控制面板中的电源选项"></a>方法二：使用控制面板中的电源选项</h3><p>1.按<code>Win键</code>打开开始菜单，，在<code>搜索框</code>中搜索<code>控制面板</code>。<br><img src="/img/USBselectivesuspend/4.webp"></p><p>2.在控制面板依次选择<code>硬件和声音&gt;电源选项&gt;更改计划设置&gt;更改高级电源设置</code>，如下图。<br><img src="/img/USBselectivesuspend/5.webp"><br><img src="/img/USBselectivesuspend/6.webp"><br><img src="/img/USBselectivesuspend/7.webp"><br><img src="/img/USBselectivesuspend/8.webp"></p><p>3.在打开的窗口中依次选择<code>USB设置&gt;USB选择性暂停设置</code>，根据需要选择性禁用，如下图。<br><img src="/img/USBselectivesuspend/9.webp"></p>]]></content>
     
@@ -177,8 +177,8 @@
   
   <entry>
     <title>离线安装NETFramework3.5(包括.NET2.0和3.0)</title>
-    <link href="/posts/abaebcec.html"/>
-    <url>/posts/abaebcec.html</url>
+    <link href="/posts/e19234c1.html"/>
+    <url>/posts/e19234c1.html</url>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用于处理在遇到下面这种情况时(图1)，但无法下载所需文件或系统找不到指定的文件(图2或图3)。<br><img src="/img/offlinesetupnet/1.webp"><br><img src="/img/offlinesetupnet/2.webp"><br><img src="/img/offlinesetupnet/3.webp"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><div class="note note-warning">            <p>❗下面根据你的这台电脑正在使用什么系统进行分情况说明</p>           </div><h3 id="1-准备系统镜像"><a href="#1-准备系统镜像" class="headerlink" title="1. 准备系统镜像"></a>1. 准备系统镜像</h3><h4 id="1-1-最新版本-Windows-11"><a href="#1-1-最新版本-Windows-11" class="headerlink" title="1.1 最新版本 Windows 11"></a>1.1 最新版本 Windows 11</h4><p>1.直接去<a href="https://www.microsoft.com/zh-cn/software-download/windows11">官网下载</a>Windows11媒体创建工具<br><img src="/img/offlinesetupnet/4.webp"></p><p>2.打开刚刚下载好的媒体创建工具一直选择下一步，直到下图这个界面，选择<code>ISO文件</code>,在点击下一步后选择ISO文件的保存位置。等待文件下载完毕。<br><img src="/img/offlinesetupnet/5.webp"></p><h4 id="1-2-其他版本-Windows"><a href="#1-2-其他版本-Windows" class="headerlink" title="1.2 其他版本 Windows"></a>1.2 其他版本 Windows</h4><p>去<a href="https://msdn.itellyou.cn/">MSDN</a>下载ISO映像,部分版本的Windows10系统映像去<a href="https://next.itellyou.cn/">MSDN的新站</a>下载。</p><blockquote><p>注意！旧站的下载链接是<code>ed2k://</code>格式的电驴下载链接(类似磁力链)，可以用迅雷来下载,新站是用<code>magnet:?xt=urn:btih:</code>格式的磁力链，可以用迅雷或者其他支持磁力链的下载软件下载。</p></blockquote><center> ⬇️旧站⬇️</center><p><img src="/img/offlinesetupnet/6.webp"></p><div class="note note-danger">            <p>❗在进行下一步时，请务必确保你的映像版本与你现在操作系统的版本相匹配。原因见下图。</p>           </div><p><img src="/img/offlinesetupnet/7.webp"></p><blockquote><p>图中的原文链接⬇️</p><p><a href="https://learn.microsoft.com/zh-cn/dotnet/framework/install/dotnet-35-windows">https://learn.microsoft.com/zh-cn/dotnet/framework/install/dotnet-35-windows</a></p></blockquote><h3 id="2-添加-NET-Framework-3-5"><a href="#2-添加-NET-Framework-3-5" class="headerlink" title="2. 添加 .NET Framework 3.5"></a>2. 添加 .NET Framework 3.5</h3><p>1.双击刚才下载好的ISO文件，ISO文件会自动挂载，记住挂载的盘符，如下图(图中的盘符为F:)<br><img src="/img/offlinesetupnet/8.webp"></p><p>2.然后<code>右键</code>任务栏的<code>Windows图标</code>(或者使用快捷键<code>win+x</code>)，选择<code>终端管理员</code>(有的可能显示的是<code>powershell管理员</code>)。</p><p><img src="/img/offlinesetupnet/9.webp"></p><p>在打开的窗口输入下面命令。</p><div class="note note-warning">            <p>❗❗❗注意下面命令中<code>F:\sources\sxs</code>里的<code>F:</code>要更换为<code>步骤2.1</code>中所挂载的盘符。</p>           </div><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">dism.exe <span class="hljs-string">/online</span> <span class="hljs-string">/enable-feature</span> <span class="hljs-string">/featurename</span><span class="hljs-function">:netfx3</span> <span class="hljs-string">/Source</span><span class="hljs-function">:F</span>:\sources\sxs<br></code></pre></td></tr></table></figure><p>等待进度条走完，如下图<br><img src="/img/offlinesetupnet/10.webp"></p><p>3.添加完毕后<code>右键</code>刚才挂载的盘，选择弹出。</p>]]></content>
     
@@ -206,8 +206,8 @@
   
   <entry>
     <title>解决Ubuntu在VirtualBox中画面卡顿问题</title>
-    <link href="/posts/6218248c.html"/>
-    <url>/posts/6218248c.html</url>
+    <link href="/posts/f80b3c2f.html"/>
+    <url>/posts/f80b3c2f.html</url>
     
     <content type="html"><![CDATA[<h2 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h2><p>如下图所示，将<code>显存(Video Memory)</code>改为<code>128MB</code>，同时勾选最下面的<code>3D 加速(3D Acceleration)</code></p><p><img src="/img/ubuntu/1.webp"></p>]]></content>
     
@@ -235,8 +235,8 @@
   
   <entry>
     <title>用SteamCMD下载创意工坊内容</title>
-    <link href="/posts/d5bcab24.html"/>
-    <url>/posts/d5bcab24.html</url>
+    <link href="/posts/641173de.html"/>
+    <url>/posts/641173de.html</url>
     
     <content type="html"><![CDATA[<h2 id="1-下载-SteamCMD"><a href="#1-下载-SteamCMD" class="headerlink" title="1. 下载 SteamCMD"></a>1. 下载 SteamCMD</h2><blockquote><p><a href="https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip">https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip</a></p></blockquote><p>如果链接失效请查看<a href="https://developer.valvesoftware.com/wiki/Zh/SteamCMD">steam官方文档</a>获取最新链接</p><p>将压缩包中的文件解压至空文件夹（文件夹用英语命名，文件夹的路径不要有中文）</p><p>打开SteamCMD，第一次打开SteamCMD会自动下载所需文件</p><p><img src="/img/steamcmd/1.webp"></p><h2 id="2-登录"><a href="#2-登录" class="headerlink" title="2. 登录"></a>2. 登录</h2><p>在Steamcmd中输入</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">login</span> 你的steam用户名<br></code></pre></td></tr></table></figure><p>登录过程要输入密码<code>(输入的密码是不会显示的)</code>和steam令牌验证码</p><p>或者<code>匿名登录</code>（如果出现无许可下载不了的情况，是因为你没有这款游戏）</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">login anonymous</span> <br></code></pre></td></tr></table></figure><h2 id="3-下载"><a href="#3-下载" class="headerlink" title="3. 下载"></a>3. 下载</h2><p>下载命令为</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">workshop_download_item game_id mod_id</span><br></code></pre></td></tr></table></figure><p>找到你的<code>游戏的App ID</code>和<code>创意工坊文件ID</code></p><p>例如<code>Wallpaper Engine：壁纸引擎</code>的App ID为<code>431960</code></p><p><img src="/img/steamcmd/2.webp"></p><p><img src="/img/steamcmd/3.webp"></p><p>要下载的壁纸文件ID为<code>3609788329</code></p><p><img src="/img/steamcmd/4.webp"></p><p>那么在steamcmd中输入</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">workshop_download_item</span> <span class="hljs-number">431960</span> <span class="hljs-number">3609788329</span><br></code></pre></td></tr></table></figure><p>出现<code>Success. Downloaded item XXXXX to &quot;XXXXXX&quot;</code>代表下载完成</p><h2 id="4-文件保存位置"><a href="#4-文件保存位置" class="headerlink" title="4. 文件保存位置"></a>4. 文件保存位置</h2><p><code>SteamCMD的文件夹\steamapps\workshop\content\App ID\创意工坊文件ID\</code></p><p>例子中的下载的文件保存在</p><p><code>SteamCMD的文件夹\steamapps\workshop\content\431960\3609788329\</code></p>]]></content>
     
@@ -264,8 +264,8 @@
   
   <entry>
     <title>电信公网IP获取</title>
-    <link href="/posts/ab56cac1.html"/>
-    <url>/posts/ab56cac1.html</url>
+    <link href="/posts/a9927a75.html"/>
+    <url>/posts/a9927a75.html</url>
     
     <content type="html"><![CDATA[<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><div class="note note-danger">            <p>❗本方法是从互联网上整理而来。</p> <p>❗本方法在广东电信可用。</p> <p>❗该方法有一定风险，运营商可能会停用你的宽带。</p> <p>❗对于您因直接或间接使用、依赖或无法使用本文所提供的任何信息而造成的<strong>任何形式的损失或损害</strong>（包括但不限于数据丢失、利润损失、业务中断、计算机故障等），<strong>本人概不负责</strong>，无论其原因为何。</p> <p>❗使用本方法代表你已了解并接受 <a href="https://blog.nekobiglazyer.work/posts/disclaimer.html">免责声明</a>。</p>           </div><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>1.确认你的拨号上网账号格式是否为<code>XXXXX@163.gd</code></p><p>2.如果是,将其修改为<code>XXXXX@pub.163.gd</code> </p>]]></content>
     
@@ -293,8 +293,8 @@
   
   <entry>
     <title>解决VSCode每次启动都要登录同步</title>
-    <link href="/posts/db614001.html"/>
-    <url>/posts/db614001.html</url>
+    <link href="/posts/5a41d8a9.html"/>
+    <url>/posts/5a41d8a9.html</url>
     
     <content type="html"><![CDATA[<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在<code>powershell</code>里执行下面命令</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">cmdkey /list | <span class="hljs-built_in">Select-String</span> <span class="hljs-literal">-Pattern</span> <span class="hljs-string">&quot;LegacyGeneric:target=(vscode.+)&quot;</span> | <span class="hljs-built_in">ForEach-Object</span> &#123; cmdkey.exe /delete <span class="hljs-variable">$_</span>.Matches.Groups[<span class="hljs-number">1</span>].Value &#125;<br></code></pre></td></tr></table></figure>]]></content>
     
@@ -322,8 +322,8 @@
   
   <entry>
     <title>免费获取HEVC解码器扩展</title>
-    <link href="/posts/a1818c5f.html"/>
-    <url>/posts/a1818c5f.html</url>
+    <link href="/posts/2b5a75d4.html"/>
+    <url>/posts/2b5a75d4.html</url>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Windows自带的播放器播放视频时可能出现下图提示，让你花7元购买这个扩展</p><p><img src="/img/HEVC/1.webp"></p><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>1.确保你的电脑有Microsoft store</p><p>2.在浏览器网址栏输入，回车</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs url">ms-windows-store://pdp/?ProductId=9N4WGH0Z6VHQ<br></code></pre></td></tr></table></figure><p>3.在出现的对话框中选择<code>打开</code>，将会打开Microsoft store</p><p><img src="/img/HEVC/2.webp"></p><p>4.在Microsoft store中安装</p><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>方法二可能需要科学上网</p><p>1.去下面这个网站 </p><blockquote><p><a href="https://store.rg-adguard.net/">https://store.rg-adguard.net/</a></p></blockquote><p>2.将左边的选项改为<code>ProductId</code>,输入<code>9n4wgh0z6vhq</code>,点击<code>√</code>，如下图</p><p><img src="/img/HEVC/3.webp"></p><p>3.在<code>File:</code>一栏点击带有<code>.appxbundle</code>后缀的一项下载</p><p><img src="/img/HEVC/4.webp"></p><p>4.双击下载好的文件安装</p>]]></content>
     
@@ -378,8 +378,8 @@
   
   <entry>
     <title>联想原厂系统获取</title>
-    <link href="/posts/4a7ca315.html"/>
-    <url>/posts/4a7ca315.html</url>
+    <link href="/posts/aa0f7e48.html"/>
+    <url>/posts/aa0f7e48.html</url>
     
     <content type="html"><![CDATA[<blockquote><p>本教程全程要科学上网，要自备至少有16G的U盘。</p></blockquote><h2 id="获取步骤"><a href="#获取步骤" class="headerlink" title="获取步骤"></a>获取步骤</h2><p>去(港区)官网登记</p><blockquote><p><a href="https://pcsupport.lenovo.com/hk/zc/lenovorecovery">https://pcsupport.lenovo.com/hk/zc/lenovorecovery</a></p></blockquote><p><img src="/img/lenovoiso/1.webp"></p><blockquote><p>图1中机器序列号可在联想电脑管家中查看或询问客服</p></blockquote><p><img src="/img/lenovoiso/2.webp"></p><p><img src="/img/lenovoiso/3.webp"></p><blockquote><p>点下一步后要求登录，这里拿邮箱注册一个</p></blockquote><p><img src="/img/lenovoiso/4.webp"></p><blockquote><p>填写图4中的表，稍后会发电子邮件到你的邮箱，邮件里有下载地址</p></blockquote><p><img src="/img/lenovoiso/5.webp"></p><blockquote><p>点击邮件里红圈的紫色字</p></blockquote><p><img src="/img/lenovoiso/6.webp"></p><p><img src="/img/lenovoiso/7.webp"></p><blockquote><p>下载好后运行</p></blockquote><p>之后跟着软件指示走(第二步时要你登录你刚才注册的账号)</p><p>要科学上网，不然下载速度可能会很慢</p>]]></content>
     
@@ -409,8 +409,8 @@
   
   <entry>
     <title>AutoCAD十字光标移动拖沓解决方法</title>
-    <link href="/posts/123c8db2.html"/>
-    <url>/posts/123c8db2.html</url>
+    <link href="/posts/ceb1bc70.html"/>
+    <url>/posts/ceb1bc70.html</url>
     
     <content type="html"><![CDATA[<blockquote><p>本方法在AutoCAD2024可用，其他版本未知</p></blockquote><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在命令行中输入<code>GFXDX12</code>,然后将值改为0，重启AutoCAD<br><img src="/img/AutoCAD/1.webp"></p>]]></content>
     
@@ -438,8 +438,8 @@
   
   <entry>
     <title>修复VAC反作弊</title>
-    <link href="/posts/5e3a5cf5.html"/>
-    <url>/posts/5e3a5cf5.html</url>
+    <link href="/posts/ee14d87d.html"/>
+    <url>/posts/ee14d87d.html</url>
     
     <content type="html"><![CDATA[<p>用于解决VAC连接超时等问题</p><blockquote><p>这个脚本来自完美世界竞技平台</p><p>如果你有安装完美世界竞技平台你可以在</p><blockquote><p>安装目录\plugin\fixvac下面找到</p></blockquote><p>本文只是把里面的内容复制出来而已</p></blockquote><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>将下面内容复制，保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><code class="hljs bat">@<span class="hljs-built_in">echo</span> off<br><span class="hljs-built_in">color</span> a<br><br><span class="hljs-keyword">goto</span> steam<br><br>:steam<br><span class="hljs-built_in">echo</span> 正在检测Steam是否开启......<br>tasklist | <span class="hljs-built_in">find</span> /I &quot;Steam.exe&quot;<br><span class="hljs-keyword">if</span> <span class="hljs-keyword">errorlevel</span> <span class="hljs-number">1</span> <span class="hljs-keyword">goto</span> steamchina<br><span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">errorlevel</span> <span class="hljs-number">1</span> <span class="hljs-keyword">goto</span> <span class="hljs-built_in">start</span><br><br>:steamchina<br><span class="hljs-built_in">echo</span> 正在检测国服启动器是否开启......<br>tasklist | <span class="hljs-built_in">find</span> /I &quot;steamchina.exe&quot;<br><span class="hljs-keyword">if</span> <span class="hljs-keyword">errorlevel</span> <span class="hljs-number">1</span> <span class="hljs-keyword">goto</span> stop<br><span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">errorlevel</span> <span class="hljs-number">1</span> <span class="hljs-keyword">goto</span> <span class="hljs-built_in">start</span><br><br>:stop<br><span class="hljs-built_in">echo</span> Steam和国服启动器均未开启<br><span class="hljs-keyword">goto</span> <span class="hljs-built_in">start</span><br><br>:killsteam<br><span class="hljs-built_in">echo</span> Steam已开启<br><span class="hljs-built_in">echo</span> 正在强制关闭<br><span class="hljs-built_in">taskkill</span> /F /IM Steam.exe<br><span class="hljs-built_in">echo</span> 已强制关闭<br><span class="hljs-keyword">goto</span> <span class="hljs-built_in">start</span><br><br>:killsteamchina<br><span class="hljs-built_in">echo</span> Steam已开启<br><span class="hljs-built_in">echo</span> 正在强制关闭<br><span class="hljs-built_in">taskkill</span> /F /IM steamchina.exe<br><span class="hljs-built_in">echo</span> 已强制关闭<br><span class="hljs-keyword">goto</span> <span class="hljs-built_in">start</span><br><br>:<span class="hljs-built_in">start</span><br><span class="hljs-built_in">echo</span> 开始解决VAC屏蔽<br><br><span class="hljs-built_in">echo</span> 开启 Network Connections<br>sc config Netman <span class="hljs-built_in">start</span>= AUTO<br>sc <span class="hljs-built_in">start</span> Netman<br><br><span class="hljs-built_in">echo</span> 开启 Remote Access Connection Manager<br>sc config RasMan <span class="hljs-built_in">start</span>= AUTO<br>sc <span class="hljs-built_in">start</span> RasMan<br><br><span class="hljs-built_in">echo</span> 开启 Telephony<br>sc config TapiSrv <span class="hljs-built_in">start</span>= AUTO<br>sc <span class="hljs-built_in">start</span> TapiSrv<br><br><span class="hljs-built_in">echo</span> 开启 Windows Firewall<br>sc config MpsSvc <span class="hljs-built_in">start</span>= AUTO<br>sc <span class="hljs-built_in">start</span> MpsSvc<br>netsh advfirewall <span class="hljs-built_in">set</span> allprofiles state on<br><br><span class="hljs-built_in">echo</span> 恢复 Data Execution Prevention 启动设置为默认值<br>bcdedit /deletevalue nointegritychecks<br>bcdedit /deletevalue loadoptions<br>bcdedit /debug off<br>bcdedit /deletevalue nx<br><br><span class="hljs-built_in">echo</span> 正在获取你的Steam或国服启动器目录<br><span class="hljs-keyword">for</span> /f &quot;tokens=<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,* &quot; <span class="hljs-variable">%%i</span> <span class="hljs-keyword">in</span> (&#x27;REG QUERY &quot;HKEY_CURRENT_USER\SOFTWARE\Valve\Steam&quot; ^| <span class="hljs-built_in">find</span> /i &quot;SteamPath&quot;&#x27;) <span class="hljs-keyword">do</span> <span class="hljs-built_in">set</span> &quot;SteamPath=<span class="hljs-variable">%%k</span>&quot; <br><span class="hljs-keyword">if</span> &quot;<span class="hljs-variable">%SteamPath%</span>&quot; <span class="hljs-keyword">NEQ</span> &quot;<span class="hljs-number">0</span>x1&quot; (<span class="hljs-keyword">goto</span> Auto) <span class="hljs-keyword">else</span> (<span class="hljs-keyword">goto</span> Manual)<br><br>:Auto<br><span class="hljs-built_in">echo</span> Steam或国服启动器目录为<span class="hljs-variable">%SteamPath%</span> <br><br><span class="hljs-built_in">echo</span> 开始安装Steam Services<br><span class="hljs-built_in">cd</span> /d &quot;<span class="hljs-variable">%SteamPath%</span>\bin&quot;<br>steamservice  /install<br><span class="hljs-built_in">ping</span> -n <span class="hljs-number">3</span> <span class="hljs-number">127</span>.<span class="hljs-number">0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">1</span>&gt;<span class="hljs-built_in">nul</span><br><span class="hljs-built_in">echo</span> 开始修复Steam Services<br>steamservice  /repair<br><span class="hljs-built_in">ping</span> -n <span class="hljs-number">3</span> <span class="hljs-number">127</span>.<span class="hljs-number">0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">1</span>&gt;<span class="hljs-built_in">nul</span><br><span class="hljs-built_in">echo</span> .<br><span class="hljs-built_in">echo</span> 修复Steam Services完毕<br><span class="hljs-built_in">echo</span> 出现&quot;Steam client service installation complete&quot;且无任何&quot;Fail&quot;字样<br><span class="hljs-built_in">echo</span> (如&quot;Add firewall exception failed <span class="hljs-keyword">for</span> steamservice.exe&quot;出现)才可以结束，<br><span class="hljs-built_in">echo</span> 否则请检查您的防火墙设置(关闭“不允许例外”选项)<br><br><span class="hljs-built_in">echo</span> 启动Steam Services服务<br>sc config &quot;Steam Client Service&quot; <span class="hljs-built_in">start</span>= AUTO<br>sc <span class="hljs-built_in">start</span> &quot;Steam Client Service&quot;<br><br><span class="hljs-built_in">title</span> 完毕!<br><span class="hljs-built_in">echo</span>                              完毕！按任意键结束窗口！<br><span class="hljs-built_in">echo</span>                              PS：一次只能获取Steam或国服启动器的目录<br><span class="hljs-built_in">echo</span>                              请提前运行一次想解决问题的启动器<br><span class="hljs-built_in">echo</span>                              快捷方式未对国服启动器进行适配<br><span class="hljs-built_in">echo</span>                              请自行将Steam.exe修改为steamchina.exe<br><span class="hljs-keyword">exit</span><br></code></pre></td></tr></table></figure>]]></content>
     
@@ -467,8 +467,8 @@
   
   <entry>
     <title>将Windows11资源管理器改为Windows10的样子</title>
-    <link href="/posts/d0b14f3a.html"/>
-    <url>/posts/d0b14f3a.html</url>
+    <link href="/posts/16047eab.html"/>
+    <url>/posts/16047eab.html</url>
     
     <content type="html"><![CDATA[<h2 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h2><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p><p>双击该文件导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Updated on: March 15, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br>@=&quot;CLSID_ItemsViewAdapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br>@=&quot;File Explorer Xaml Island View Adapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\ShellBrowser]<br>&quot;ITBar7Layout&quot;=hex:13,00,00,00,00,00,00,00,00,00,00,00,20,00,00,00,10,00,01,00,\<br>  00,00,00,00,01,00,00,00,01,07,00,00,5e,01,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00<br></code></pre></td></tr></table></figure><h2 id="还原方法"><a href="#还原方法" class="headerlink" title="还原方法"></a>还原方法</h2><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p><p>双击该文件导入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br></code></pre></td></tr></table></figure>]]></content>
     
@@ -496,8 +496,8 @@
   
   <entry>
     <title>将Windows11右键菜单改为Windows10的样子</title>
-    <link href="/posts/aae0376c.html"/>
-    <url>/posts/aae0376c.html</url>
+    <link href="/posts/ff1a6f31.html"/>
+    <url>/posts/ff1a6f31.html</url>
     
     <content type="html"><![CDATA[<h2 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h2><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg add &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;\InprocServer32&quot; /f /ve<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe<br></code></pre></td></tr></table></figure><h2 id="还原成-Windows-11-样式"><a href="#还原成-Windows-11-样式" class="headerlink" title="还原成 Windows 11 样式"></a>还原成 Windows 11 样式</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bat">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;<span class="hljs-number">86</span>ca1aa0-<span class="hljs-number">34</span>aa-<span class="hljs-number">4</span>e8b-a509-<span class="hljs-number">50</span>c905bae2a2&#125;&quot; /f<br><span class="hljs-built_in">taskkill</span> /f /im explorer.exe &amp; <span class="hljs-built_in">start</span> explorer.exe <br></code></pre></td></tr></table></figure>]]></content>
     
@@ -525,8 +525,8 @@
   
   <entry>
     <title>开启或关闭Windows休眠</title>
-    <link href="/posts/c5fbb796.html"/>
-    <url>/posts/c5fbb796.html</url>
+    <link href="/posts/8d2c7af0.html"/>
+    <url>/posts/8d2c7af0.html</url>
     
     <content type="html"><![CDATA[<h2 id="关闭-Windows-休眠"><a href="#关闭-Windows-休眠" class="headerlink" title="关闭 Windows 休眠"></a>关闭 Windows 休眠</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h off<br></code></pre></td></tr></table></figure><h2 id="开启-Windows-休眠"><a href="#开启-Windows-休眠" class="headerlink" title="开启 Windows 休眠"></a>开启 Windows 休眠</h2><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bat">powercfg -h on<br></code></pre></td></tr></table></figure>]]></content>
     
@@ -554,8 +554,8 @@
   
   <entry>
     <title>windows家庭版添加策略组</title>
-    <link href="/posts/843258ad.html"/>
-    <url>/posts/843258ad.html</url>
+    <link href="/posts/ab8ae41d.html"/>
+    <url>/posts/ab8ae41d.html</url>
     
     <content type="html"><![CDATA[<h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p><p>然后右键以管理员身份运行</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bat"><br>@<span class="hljs-built_in">echo</span> off<br><br><span class="hljs-built_in">pushd</span> &quot;%~dp0&quot;<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~<span class="hljs-number">3</span>*.mum &gt;List.txt<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~<span class="hljs-number">3</span>*.mum &gt;&gt;List.txt<br><br><span class="hljs-keyword">for</span> /f <span class="hljs-variable">%%i</span> <span class="hljs-keyword">in</span> (&#x27;<span class="hljs-built_in">findstr</span> /i . List.txt <span class="hljs-number">2</span>^&gt;<span class="hljs-built_in">nul</span>&#x27;) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\<span class="hljs-variable">%%i</span>&quot;<br><br><span class="hljs-built_in">pause</span><br><br></code></pre></td></tr></table></figure>]]></content>
     
@@ -583,8 +583,8 @@
   
   <entry>
     <title>不小心买了10年域名</title>
-    <link href="/posts/df936e94.html"/>
-    <url>/posts/df936e94.html</url>
+    <link href="/posts/33361c83.html"/>
+    <url>/posts/33361c83.html</url>
     
     <content type="html"><![CDATA[<p>原本是想买1年玩一下的，结果点错了买成10年的了 (›´ω&#96;‹ )</p><p>所以干脆也搭个博客</p>]]></content>
     

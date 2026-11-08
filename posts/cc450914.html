@@ -16,25 +16,30 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="大食懒">
+  <meta name="author" content="https://learn.microsoft.com/zh-cn/answers/questions/2006621/question-2006621">
   <meta name="keywords" content="">
   
-    <meta name="description" content="原本是想买1年玩一下的，结果点错了买成10年的了 (›´ω&#96;‹ ) 所以干脆也搭个博客">
+    <meta name="description" content="前言本教程适用于下图中组策略无法使用的情况 无法打开此计算机上的组策略对象。你可能没有相应的权限   解决方法打开C:\Windows\System32\GroupPolicy，查看目录下是否有Machine文件夹。 如果有Machine文件夹，❗备份该文件夹❗，然后删除Machine文件夹，再新建Machine文件夹。 如果没有，直接新建Machine文件夹">
 <meta property="og:type" content="article">
-<meta property="og:title" content="不小心买了10年域名">
-<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/df936e94.html">
+<meta property="og:title" content="解决无权打开组策略问题">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/cc450914.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="原本是想买1年玩一下的，结果点错了买成10年的了 (›´ω&#96;‹ ) 所以干脆也搭个博客">
+<meta property="og:description" content="前言本教程适用于下图中组策略无法使用的情况 无法打开此计算机上的组策略对象。你可能没有相应的权限   解决方法打开C:\Windows\System32\GroupPolicy，查看目录下是否有Machine文件夹。 如果有Machine文件夹，❗备份该文件夹❗，然后删除Machine文件夹，再新建Machine文件夹。 如果没有，直接新建Machine文件夹">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-22T05:04:02.000Z">
-<meta property="article:modified_time" content="2025-11-24T09:45:59.159Z">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/grouppolicyaccessdenied/1.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/grouppolicyaccessdenied/2.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/grouppolicyaccessdenied/3.webp">
+<meta property="article:published_time" content="2026-03-20T01:02:02.000Z">
+<meta property="article:modified_time" content="2026-03-20T01:21:20.454Z">
 <meta property="article:author" content="大食懒">
-<meta property="article:tag" content="域名">
+<meta property="article:tag" content="Windows">
+<meta property="article:tag" content="组策略">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/grouppolicyaccessdenied/1.webp">
   
   
   
-  <title>不小心买了10年域名 - 赛博偏方</title>
+  <title>解决无权打开组策略问题 - 赛博偏方</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -303,7 +308,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="不小心买了10年域名"></span>
+            <span id="subtitle" data-typed-text="解决无权打开组策略问题"></span>
           
         </div>
 
@@ -313,14 +318,14 @@
     
       <span class="post-meta mr-2">
         <i class="iconfont icon-author" aria-hidden="true"></i>
-        大食懒
+        https://learn.microsoft.com/zh-cn/answers/questions/2006621/question-2006621
       </span>
     
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-22 13:04" pubdate>
-          2025年11月22日 下午
+        <time datetime="2026-03-20 09:02" pubdate>
+          2026年3月20日 上午
         </time>
       </span>
     
@@ -331,7 +336,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          44 字
+          175 字
         
       </span>
     
@@ -342,7 +347,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -381,12 +386,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">不小心买了10年域名</h1>
+            <h1 id="seo-header">解决无权打开组策略问题</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年11月24日 下午
+                    本文最后更新于 2026年3月20日 上午
                   
                 
               </p>
@@ -394,8 +399,14 @@
             
               <div class="markdown-body">
                 
-                <p>原本是想买1年玩一下的，结果点错了买成10年的了 (›´ω&#96;‹ )</p>
-<p>所以干脆也搭个博客</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本教程适用于下图中组策略无法使用的情况</p>
+<p><code>无法打开此计算机上的组策略对象。你可能没有相应的权限</code></p>
+<p><img src="/img/grouppolicyaccessdenied/1.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/grouppolicyaccessdenied/2.webp" srcset="/img/loading.gif" lazyload></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>打开<code>C:\Windows\System32\GroupPolicy</code>，查看目录下是否有<code>Machine</code>文件夹。</p>
+<p>如果有Machine文件夹，❗备份该文件夹❗，然后删除<code>Machine</code>文件夹，再新建<code>Machine</code>文件夹。</p>
+<p>如果没有，直接新建<code>Machine</code>文件夹</p>
+<p><img src="/img/grouppolicyaccessdenied/3.webp" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -414,8 +425,15 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%9D%82%E8%B0%88/" class="category-chain-item">杂谈</a>
+  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/" class="category-chain-item">Windows系统</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E6%95%85%E9%9A%9C%E4%BF%AE%E5%A4%8D/" class="category-chain-item">故障修复</a>
+  
+  
+
   
 
       </span>
@@ -429,7 +447,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%9F%9F%E5%90%8D/" class="print-no-link">#域名</a>
+        <a href="/tags/Windows/" class="print-no-link">#Windows</a>
+      
+        <a href="/tags/%E7%BB%84%E7%AD%96%E7%95%A5/" class="print-no-link">#组策略</a>
       
     </div>
   
@@ -441,39 +461,23 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>不小心买了10年域名</div>
-      <div>https://blog.nekobiglazyer.work/posts/df936e94.html</div>
+      <div>解决无权打开组策略问题</div>
+      <div>https://blog.nekobiglazyer.work/posts/cc450914.html</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>大食懒</div>
+          <div>https://learn.microsoft.com/zh-cn/answers/questions/2006621/question-2006621</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年11月22日</div>
+          <div>2026年3月20日</div>
         </div>
       
       
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-cc-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
       
     </div>
     <div class="license-icon iconfont"></div>
@@ -486,15 +490,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/843258ad.html" title="windows家庭版添加策略组">
+                      <a href="/posts/d7058df7.html" title="解决Google Play商店无法下载或更新应用的问题">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">windows家庭版添加策略组</span>
+                        <span class="hidden-mobile">解决Google Play商店无法下载或更新应用的问题</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/posts/2d22a3e7.html" title="解决steam游戏备份无法删除的问题">
+                        <span class="hidden-mobile">解决steam游戏备份无法删除的问题</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

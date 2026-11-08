@@ -19,28 +19,33 @@
   <meta name="author" content="大食懒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1. 下载 SteamCMD https:&#x2F;&#x2F;steamcdn-a.akamaihd.net&#x2F;client&#x2F;installer&#x2F;steamcmd.zip  如果链接失效请查看steam官方文档获取最新链接 将压缩包中的文件解压至空文件夹（文件夹用英语命名，文件夹的路径不要有中文） 打开SteamCMD，第一次打开SteamCMD会自动下载所需文件  2. 登录在Steamcmd中输入 1login">
+    <meta name="description" content="前言 USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备  但禁用该功能可以解决一些设备间歇性失灵 禁用方法方法一：使用设备管理器禁用1.右键任务栏的Windows图标">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用SteamCMD下载创意工坊内容">
-<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/d5bcab24.html">
+<meta property="og:title" content="在Windows中禁用USB选择性挂起">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/a2199bca.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="1. 下载 SteamCMD https:&#x2F;&#x2F;steamcdn-a.akamaihd.net&#x2F;client&#x2F;installer&#x2F;steamcmd.zip  如果链接失效请查看steam官方文档获取最新链接 将压缩包中的文件解压至空文件夹（文件夹用英语命名，文件夹的路径不要有中文） 打开SteamCMD，第一次打开SteamCMD会自动下载所需文件  2. 登录在Steamcmd中输入 1login">
+<meta property="og:description" content="前言 USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备  但禁用该功能可以解决一些设备间歇性失灵 禁用方法方法一：使用设备管理器禁用1.右键任务栏的Windows图标">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/steamcmd/1.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/steamcmd/2.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/steamcmd/3.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/steamcmd/4.webp">
-<meta property="article:published_time" content="2025-11-23T07:30:01.000Z">
-<meta property="article:modified_time" content="2025-11-24T09:45:59.195Z">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/1.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/2.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/3.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/4.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/5.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/6.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/7.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/8.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/9.webp">
+<meta property="article:published_time" content="2026-01-09T05:14:34.000Z">
+<meta property="article:modified_time" content="2026-01-09T06:19:09.471Z">
 <meta property="article:author" content="大食懒">
-<meta property="article:tag" content="Steam">
-<meta property="article:tag" content="赛博偏方">
+<meta property="article:tag" content="USB">
+<meta property="article:tag" content="电源管理">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/steamcmd/1.webp">
+<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/USBselectivesuspend/1.webp">
   
   
   
-  <title>用SteamCMD下载创意工坊内容 - 赛博偏方</title>
+  <title>在Windows中禁用USB选择性挂起 - 赛博偏方</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -309,7 +314,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="用SteamCMD下载创意工坊内容"></span>
+            <span id="subtitle" data-typed-text="在Windows中禁用USB选择性挂起"></span>
           
         </div>
 
@@ -325,8 +330,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-23 15:30" pubdate>
-          2025年11月23日 下午
+        <time datetime="2026-01-09 13:14" pubdate>
+          2026年1月9日 下午
         </time>
       </span>
     
@@ -337,7 +342,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          643 字
+          473 字
         
       </span>
     
@@ -348,7 +353,7 @@
         
         
         
-          6 分钟
+          4 分钟
         
       </span>
     
@@ -387,12 +392,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">用SteamCMD下载创意工坊内容</h1>
+            <h1 id="seo-header">在Windows中禁用USB选择性挂起</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年11月24日 下午
+                    本文最后更新于 2026年1月9日 下午
                   
                 
               </p>
@@ -400,35 +405,17 @@
             
               <div class="markdown-body">
                 
-                <h2 id="1-下载-SteamCMD"><a href="#1-下载-SteamCMD" class="headerlink" title="1. 下载 SteamCMD"></a>1. 下载 SteamCMD</h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip">https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip</a></p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>USB选择性挂起（USB Selective Suspend）是Windows系统的一项电源管理功能。它的核心作用是当检测到某个USB设备（如U盘、鼠标、键盘）一段时间未被使用时，Windows可以单独将该设备置于低功耗的“休眠”状态，以节省电能，而不会影响其他正在使用的USB设备</p>
 </blockquote>
-<p>如果链接失效请查看<a target="_blank" rel="noopener" href="https://developer.valvesoftware.com/wiki/Zh/SteamCMD">steam官方文档</a>获取最新链接</p>
-<p>将压缩包中的文件解压至空文件夹（文件夹用英语命名，文件夹的路径不要有中文）</p>
-<p>打开SteamCMD，第一次打开SteamCMD会自动下载所需文件</p>
-<p><img src="/img/steamcmd/1.webp" srcset="/img/loading.gif" lazyload></p>
-<h2 id="2-登录"><a href="#2-登录" class="headerlink" title="2. 登录"></a>2. 登录</h2><p>在Steamcmd中输入</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">login</span> 你的steam用户名<br></code></pre></td></tr></table></figure>
-<p>登录过程要输入密码<code>(输入的密码是不会显示的)</code>和steam令牌验证码</p>
-<p>或者<code>匿名登录</code>（如果出现无许可下载不了的情况，是因为你没有这款游戏）</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">login anonymous</span> <br></code></pre></td></tr></table></figure>
-
-<h2 id="3-下载"><a href="#3-下载" class="headerlink" title="3. 下载"></a>3. 下载</h2><p>下载命令为</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">workshop_download_item game_id mod_id</span><br></code></pre></td></tr></table></figure>
-
-<p>找到你的<code>游戏的App ID</code>和<code>创意工坊文件ID</code></p>
-<p>例如<code>Wallpaper Engine：壁纸引擎</code>的App ID为<code>431960</code></p>
-<p><img src="/img/steamcmd/2.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="/img/steamcmd/3.webp" srcset="/img/loading.gif" lazyload></p>
-<p>要下载的壁纸文件ID为<code>3609788329</code></p>
-<p><img src="/img/steamcmd/4.webp" srcset="/img/loading.gif" lazyload></p>
-<p>那么在steamcmd中输入</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">workshop_download_item</span> <span class="hljs-number">431960</span> <span class="hljs-number">3609788329</span><br></code></pre></td></tr></table></figure>
-
-<p>出现<code>Success. Downloaded item XXXXX to &quot;XXXXXX&quot;</code>代表下载完成</p>
-<h2 id="4-文件保存位置"><a href="#4-文件保存位置" class="headerlink" title="4. 文件保存位置"></a>4. 文件保存位置</h2><p><code>SteamCMD的文件夹\steamapps\workshop\content\App ID\创意工坊文件ID\</code></p>
-<p>例子中的下载的文件保存在</p>
-<p><code>SteamCMD的文件夹\steamapps\workshop\content\431960\3609788329\</code></p>
+<p>但禁用该功能可以解决一些设备间歇性失灵</p>
+<h2 id="禁用方法"><a href="#禁用方法" class="headerlink" title="禁用方法"></a>禁用方法</h2><h3 id="方法一：使用设备管理器禁用"><a href="#方法一：使用设备管理器禁用" class="headerlink" title="方法一：使用设备管理器禁用"></a>方法一：使用设备管理器禁用</h3><p>1.<code>右键</code>任务栏的<code>Windows图标</code>(或者使用快捷键win+x)，然后从上下文菜单中选择设备管理器<br><img src="/img/USBselectivesuspend/1.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2.找到<code>通用串行总线控制器</code>并展开，再找到<code>通用USB集线器</code>或<code>USB根集线器</code>，<code>右键</code>然后选择<code>属性</code>。<br><img src="/img/USBselectivesuspend/2.webp" srcset="/img/loading.gif" lazyload></p>
+<p>3.切换到<code>电源管理选项卡</code>，然后<code>取消选中允许计算机关闭此设备以节省电量选项</code>。单击确定保存更改。<br><img src="/img/USBselectivesuspend/3.webp" srcset="/img/loading.gif" lazyload></p>
+<p>4.重复以上步骤禁用其他USB</p>
+<h3 id="方法二：使用控制面板中的电源选项"><a href="#方法二：使用控制面板中的电源选项" class="headerlink" title="方法二：使用控制面板中的电源选项"></a>方法二：使用控制面板中的电源选项</h3><p>1.按<code>Win键</code>打开开始菜单，，在<code>搜索框</code>中搜索<code>控制面板</code>。<br><img src="/img/USBselectivesuspend/4.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2.在控制面板依次选择<code>硬件和声音&gt;电源选项&gt;更改计划设置&gt;更改高级电源设置</code>，如下图。<br><img src="/img/USBselectivesuspend/5.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/6.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/7.webp" srcset="/img/loading.gif" lazyload><br><img src="/img/USBselectivesuspend/8.webp" srcset="/img/loading.gif" lazyload></p>
+<p>3.在打开的窗口中依次选择<code>USB设置&gt;USB选择性暂停设置</code>，根据需要选择性禁用，如下图。<br><img src="/img/USBselectivesuspend/9.webp" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -447,12 +434,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E8%BD%AF%E4%BB%B6/" class="category-chain-item">软件</a>
+  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/" class="category-chain-item">Windows系统</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E8%BD%AF%E4%BB%B6/Steam/" class="category-chain-item">Steam</a>
+  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" class="category-chain-item">系统设置</a>
   
   
 
@@ -469,9 +456,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/" class="print-no-link">#赛博偏方</a>
+        <a href="/tags/USB/" class="print-no-link">#USB</a>
       
-        <a href="/tags/Steam/" class="print-no-link">#Steam</a>
+        <a href="/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/" class="print-no-link">#电源管理</a>
       
     </div>
   
@@ -483,8 +470,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>用SteamCMD下载创意工坊内容</div>
-      <div>https://blog.nekobiglazyer.work/posts/d5bcab24.html</div>
+      <div>在Windows中禁用USB选择性挂起</div>
+      <div>https://blog.nekobiglazyer.work/posts/a2199bca.html</div>
     </div>
     <div class="license-meta">
       
@@ -496,7 +483,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年11月23日</div>
+          <div>2026年1月9日</div>
         </div>
       
       
@@ -528,9 +515,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/6218248c.html" title="解决Ubuntu在VirtualBox中画面卡顿问题">
+                      <a href="/posts/1c7ef172.html" title="解决虚拟机安装Windows98报错">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">解决Ubuntu在VirtualBox中画面卡顿问题</span>
+                        <span class="hidden-mobile">解决虚拟机安装Windows98报错</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -538,8 +525,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/ab56cac1.html" title="电信公网IP获取">
-                        <span class="hidden-mobile">电信公网IP获取</span>
+                      <a href="/posts/e19234c1.html" title="离线安装NETFramework3.5(包括.NET2.0和3.0)">
+                        <span class="hidden-mobile">离线安装NETFramework3.5(包括.NET2.0和3.0)</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

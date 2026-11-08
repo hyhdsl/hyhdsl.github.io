@@ -16,18 +16,18 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/">
+  <meta name="author" content="大食懒">
   <meta name="keywords" content="">
   
-    <meta name="description" content="修改方法复制下面代码然后保存到一个*.reg文件里 双击该文件导入 123456789101112131415161718192021222324252627282930313233343536373839404142434445Windows Registry Editor Version 5.00; Created by: Shawn Brink; Cretead on: January 11">
+    <meta name="description" content="操作步骤复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12345678910111213@echo offpushd &quot;%~dp0&quot;dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &gt;List.txtd">
 <meta property="og:type" content="article">
-<meta property="og:title" content="将Windows11资源管理器改为Windows10的样子">
-<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/d0b14f3a.html">
+<meta property="og:title" content="windows家庭版添加策略组">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/posts/ab8ae41d.html">
 <meta property="og:site_name" content="赛博偏方">
-<meta property="og:description" content="修改方法复制下面代码然后保存到一个*.reg文件里 双击该文件导入 123456789101112131415161718192021222324252627282930313233343536373839404142434445Windows Registry Editor Version 5.00; Created by: Shawn Brink; Cretead on: January 11">
+<meta property="og:description" content="操作步骤复制下面代码然后保存到一个*.bat文件里 然后右键以管理员身份运行 12345678910111213@echo offpushd &quot;%~dp0&quot;dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &gt;List.txtd">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-22T06:03:40.000Z">
-<meta property="article:modified_time" content="2025-11-24T09:45:59.168Z">
+<meta property="article:published_time" content="2025-11-22T05:49:22.000Z">
+<meta property="article:modified_time" content="2025-11-24T09:45:59.155Z">
 <meta property="article:author" content="大食懒">
 <meta property="article:tag" content="Windows">
 <meta property="article:tag" content="赛博偏方">
@@ -35,7 +35,7 @@
   
   
   
-  <title>将Windows11资源管理器改为Windows10的样子 - 赛博偏方</title>
+  <title>windows家庭版添加策略组 - 赛博偏方</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -304,7 +304,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="将Windows11资源管理器改为Windows10的样子"></span>
+            <span id="subtitle" data-typed-text="windows家庭版添加策略组"></span>
           
         </div>
 
@@ -314,13 +314,13 @@
     
       <span class="post-meta mr-2">
         <i class="iconfont icon-author" aria-hidden="true"></i>
-        https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/
+        大食懒
       </span>
     
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-22 14:03" pubdate>
+        <time datetime="2025-11-22 13:49" pubdate>
           2025年11月22日 下午
         </time>
       </span>
@@ -332,7 +332,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.3k 字
+          436 字
         
       </span>
     
@@ -343,7 +343,7 @@
         
         
         
-          28 分钟
+          4 分钟
         
       </span>
     
@@ -382,7 +382,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">将Windows11资源管理器改为Windows10的样子</h1>
+            <h1 id="seo-header">windows家庭版添加策略组</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -395,14 +395,9 @@
             
               <div class="markdown-body">
                 
-                <h2 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h2><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p>
-<p>双击该文件导入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Updated on: March 15, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br>@=&quot;CLSID_ItemsViewAdapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br>@=&quot;File Explorer Xaml Island View Adapter&quot;<br><br>[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;\InProcServer32]<br>@=&quot;C:\\Windows\\System32\\Windows.UI.FileExplorer.dll_&quot;<br>&quot;ThreadingModel&quot;=&quot;Apartment&quot;<br><br>[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\ShellBrowser]<br>&quot;ITBar7Layout&quot;=hex:13,00,00,00,00,00,00,00,00,00,00,00,20,00,00,00,10,00,01,00,\<br>  00,00,00,00,01,00,00,00,01,07,00,00,5e,01,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\<br>  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00<br></code></pre></td></tr></table></figure>
-
-<h2 id="还原方法"><a href="#还原方法" class="headerlink" title="还原方法"></a>还原方法</h2><p>复制下面代码然后保存到一个<code>*.reg</code>文件里</p>
-<p>双击该文件导入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs reg">Windows Registry Editor Version 5.00<br><br>; Created by: Shawn Brink<br>; Cretead on: January 11, 2024<br>; Tutorial: https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;2aa9162e-c906-4dd9-ad0b-3d24a8eef5a0&#125;]<br><br>[-HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;6480100b-5a83-4d1e-9f69-8ae5a88e9a33&#125;]<br></code></pre></td></tr></table></figure>
-
+                <h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><p>复制下面代码然后保存到一个<code>*.bat</code>文件里</p>
+<p>然后右键以管理员身份运行</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bat"><br>@<span class="hljs-built_in">echo</span> off<br><br><span class="hljs-built_in">pushd</span> &quot;%~dp0&quot;<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~<span class="hljs-number">3</span>*.mum &gt;List.txt<br><br><span class="hljs-built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~<span class="hljs-number">3</span>*.mum &gt;&gt;List.txt<br><br><span class="hljs-keyword">for</span> /f <span class="hljs-variable">%%i</span> <span class="hljs-keyword">in</span> (&#x27;<span class="hljs-built_in">findstr</span> /i . List.txt <span class="hljs-number">2</span>^&gt;<span class="hljs-built_in">nul</span>&#x27;) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\<span class="hljs-variable">%%i</span>&quot;<br><br><span class="hljs-built_in">pause</span><br><br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -425,7 +420,7 @@
   
     <span>></span>
     
-  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%95%8C%E9%9D%A2%E5%AE%9A%E5%88%B6/" class="category-chain-item">界面定制</a>
+  <a href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/" class="category-chain-item">系统设置</a>
   
   
 
@@ -456,14 +451,14 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>将Windows11资源管理器改为Windows10的样子</div>
-      <div>https://blog.nekobiglazyer.work/posts/d0b14f3a.html</div>
+      <div>windows家庭版添加策略组</div>
+      <div>https://blog.nekobiglazyer.work/posts/ab8ae41d.html</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/</div>
+          <div>大食懒</div>
         </div>
       
       
@@ -485,9 +480,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/5e3a5cf5.html" title="修复VAC反作弊">
+                      <a href="/posts/8d2c7af0.html" title="开启或关闭Windows休眠">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">修复VAC反作弊</span>
+                        <span class="hidden-mobile">开启或关闭Windows休眠</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -495,8 +490,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/aae0376c.html" title="将Windows11右键菜单改为Windows10的样子">
-                        <span class="hidden-mobile">将Windows11右键菜单改为Windows10的样子</span>
+                      <a href="/posts/33361c83.html" title="不小心买了10年域名">
+                        <span class="hidden-mobile">不小心买了10年域名</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
