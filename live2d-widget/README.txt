@@ -5,7 +5,7 @@
 ## 文件
 
 - `autoload.js`：本站改写的加载入口，只加载本地文件；
-- `waifu.css`：看板娘样式，画布 240×240，视口 ≤1365px 时隐藏；
+- `waifu.css`：看板娘样式，画布 180×270，视口 ≤1365px 时隐藏；
 - `waifu-tips.js`、`chunk/`：看板娘逻辑；
 - `waifu-tips.json`：提示语和本地模型配置；
 - `live2d.min.js`：Cubism 2 Core；

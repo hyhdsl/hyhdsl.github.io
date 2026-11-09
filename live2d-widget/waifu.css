@@ -79,9 +79,9 @@
 
 #live2d {
 	cursor: grab;
-	height: 480px;
+	height: 270px;
 	position: relative;
-	width: 240px;
+	width: 180px;
 }
 
 #live2d:active {
