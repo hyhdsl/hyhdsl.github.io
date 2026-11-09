@@ -48,10 +48,11 @@ function loadExternalResource(url, type) {
 
   initWidget({
     waifuPath: live2d_path + 'waifu-tips.json',
+    cdnPath: live2d_path + 'models/',
     cubism2Path: live2d_path + 'live2d.min.js',
     cubism5Path: '', // 只用 Cubism 2 模型，不加载 Cubism 5 Core
     modelId: 0,
-    tools: ['hitokoto', 'photo', 'info', 'quit'],
+    tools: ['hitokoto', 'switch-texture', 'photo', 'info', 'quit'],
     logLevel: 'warn',
     drag: false,
   });
