@@ -26,22 +26,22 @@
 <meta property="og:site_name" content="赛博偏方">
 <meta property="og:description" content="前言本文用于解决在虚拟机安装Windows98时遇到下列错误。 1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL 2️⃣该程序执行了非法操作，即将关闭。EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH 解决方法1. 下载补丁 在GitHub下载https:&#x2F;&#x2F;github.com&#x2F;JHRobotics&#x2F;patcher9x&#x2F;re">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/1.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/github.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/vbox.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/2.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/3.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/3.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/4.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/5.webp">
-<meta property="og:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/6.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/01.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/github-release.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/virtualbox-floppy.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/02.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/03.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/03.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/04.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/05.webp">
+<meta property="og:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/06.webp">
 <meta property="article:published_time" content="2026-01-12T06:23:07.000Z">
 <meta property="article:modified_time" content="2026-01-12T12:41:58.738Z">
 <meta property="article:author" content="大食懒">
 <meta property="article:tag" content="Windows">
 <meta property="article:tag" content="虚拟机">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/vboxwin98/1.webp">
+<meta name="twitter:image" content="https://blog.nekobiglazyer.work/img/posts/virtualbox-windows98/01.webp">
   
   
   
@@ -407,18 +407,18 @@
                 
                 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文用于解决在虚拟机安装Windows98时遇到下列错误。</p>
 <p>1️⃣链接文件SHELL32.DLL到不存在的输出GDI32.DLL</p>
-<p>2️⃣该程序执行了非法操作，即将关闭。<br>EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH<br><img src="/img/vboxwin98/1.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2️⃣该程序执行了非法操作，即将关闭。<br>EXPLORER在 0167:0040a067的模块EXPLORER.EXE中导致例外60007eH<br><img src="/img/posts/virtualbox-windows98/01.webp" srcset="/img/loading.gif" lazyload></p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="1-下载补丁"><a href="#1-下载补丁" class="headerlink" title="1. 下载补丁"></a>1. 下载补丁</h3><blockquote>
 <p>在GitHub下载<br><a target="_blank" rel="noopener" href="https://github.com/JHRobotics/patcher9x/releases">https://github.com/JHRobotics/patcher9x/releases</a></p>
 </blockquote>
-<p><img src="/img/vboxwin98/github.webp" srcset="/img/loading.gif" lazyload></p>
-<h3 id="2-安装补丁"><a href="#2-安装补丁" class="headerlink" title="2. 安装补丁"></a>2. 安装补丁</h3><p>1.在虚拟机中选用软盘，加载补丁。同时将软盘设置为第一启动项。<br><img src="/img/vboxwin98/vbox.webp" srcset="/img/loading.gif" lazyload></p>
-<p>2.启动虚拟机，选择第1项。⬇️<br><img src="/img/vboxwin98/2.webp" srcset="/img/loading.gif" lazyload></p>
-<p>3.输入 <code>patch9x</code> ，按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp" srcset="/img/loading.gif" lazyload></p>
-<p>4.出现<code>[C:\Windows\System]:</code>时按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/3.webp" srcset="/img/loading.gif" lazyload></p>
-<p>5.出现<code>Choose(0-4):</code>时输入<code>1</code>,按<code>回车</code>。⬇️<br><img src="/img/vboxwin98/4.webp" srcset="/img/loading.gif" lazyload></p>
-<p>6.出现<code>Apply patch/patches? (Y - Yes, N -No, M - print moreinformation): </code>时输入<code>Y</code>。⬇️<br><img src="/img/vboxwin98/5.webp" srcset="/img/loading.gif" lazyload></p>
-<p>7.出现<code>Press enter to exit...</code>时按任意键退出补丁。⬇️<br><img src="/img/vboxwin98/6.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/posts/virtualbox-windows98/github-release.webp" srcset="/img/loading.gif" lazyload></p>
+<h3 id="2-安装补丁"><a href="#2-安装补丁" class="headerlink" title="2. 安装补丁"></a>2. 安装补丁</h3><p>1.在虚拟机中选用软盘，加载补丁。同时将软盘设置为第一启动项。<br><img src="/img/posts/virtualbox-windows98/virtualbox-floppy.webp" srcset="/img/loading.gif" lazyload></p>
+<p>2.启动虚拟机，选择第1项。⬇️<br><img src="/img/posts/virtualbox-windows98/02.webp" srcset="/img/loading.gif" lazyload></p>
+<p>3.输入 <code>patch9x</code> ，按<code>回车</code>。⬇️<br><img src="/img/posts/virtualbox-windows98/03.webp" srcset="/img/loading.gif" lazyload></p>
+<p>4.出现<code>[C:\Windows\System]:</code>时按<code>回车</code>。⬇️<br><img src="/img/posts/virtualbox-windows98/03.webp" srcset="/img/loading.gif" lazyload></p>
+<p>5.出现<code>Choose(0-4):</code>时输入<code>1</code>,按<code>回车</code>。⬇️<br><img src="/img/posts/virtualbox-windows98/04.webp" srcset="/img/loading.gif" lazyload></p>
+<p>6.出现<code>Apply patch/patches? (Y - Yes, N -No, M - print moreinformation): </code>时输入<code>Y</code>。⬇️<br><img src="/img/posts/virtualbox-windows98/05.webp" srcset="/img/loading.gif" lazyload></p>
+<p>7.出现<code>Press enter to exit...</code>时按任意键退出补丁。⬇️<br><img src="/img/posts/virtualbox-windows98/06.webp" srcset="/img/loading.gif" lazyload></p>
 <p>8.重启虚拟机到硬盘，不要进光盘的安装程序，继续剩下的安装。</p>
 
                 
