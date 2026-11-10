@@ -6,6 +6,7 @@ User-agent: Googlebot-Image
 User-agent: Googlebot-News
 User-agent: Googlebot-Video
 User-agent: Google-InspectionTool
+Disallow: /img/posts/
 Allow: /
 
 # Yandex
@@ -13,14 +14,17 @@ User-agent: YandexBot
 User-agent: YandexImages
 User-agent: YandexVideo
 User-agent: YandexNews
+Disallow: /img/posts/
 Allow: /
 
 # Bing
 User-agent: bingbot
+Disallow: /img/posts/
 Allow: /
 
 # Block every other crawler
 User-agent: *
 Disallow: /
+Disallow: /img/posts/
 
 Sitemap: https://blog.nekobiglazyer.work/sitemap.xml
