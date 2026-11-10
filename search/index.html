@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>搜索 | 赛博偏方</title>
+  <link rel="canonical" href="https://blog.nekobiglazyer.work/search/index.html">
+  <meta name="author" content="大食懒" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="用来放一些从网上找到的冷门方法">
+<meta property="og:type" content="website">
+<meta property="og:title" content="搜索">
+<meta property="og:url" content="https://blog.nekobiglazyer.work/search/index.html">
+<meta property="og:site_name" content="赛博偏方">
+<meta property="og:description" content="用来放一些从网上找到的冷门方法">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="大食懒">
+<meta name="twitter:card" content="summary">
+  
+  <!-- JSON-LD 结构化数据 -->
+  
+  
+  <!-- 关键 CSS 预加载 -->
+  <link rel="preload" href="/css/kr-core.min.css" as="style" crossorigin>
+  <link rel="preload" href="/css/kr-theme/light.min.css" as="style" crossorigin>
+  <link rel="preload" href="/css/kr-theme/dark.min.css" as="style" crossorigin>
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kr-core.min.css" media="all">
+  <link rel="stylesheet" id="theme-light-css" href="/css/kr-theme/light.min.css" media="all">
+  <link rel="stylesheet" id="theme-dark-css" href="/css/kr-theme/dark.min.css" media="(prefers-color-scheme: dark)">
+  
+    <link rel="stylesheet"  id="highlight-css" href="/css/highlight/highlight.js/night-eighties.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/css/highlight/highlight.js/night-eighties.min.css"></noscript>
+  
+  <script src="/js/kr-theme.min.js"></script>
+  <link rel="stylesheet"  id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css"></noscript>
+  
+    <link rel="stylesheet"  id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/nprogress@0.2.0/nprogress.css"></noscript>
+  
+  
+    <link rel="stylesheet"  href="/vendors/viewerjs@1.11.6/dist/viewer.min.css" media="print" onload="this.media='all'" onerror="this.media='all'"><noscript><link rel="stylesheet" href="/vendors/viewerjs@1.11.6/dist/viewer.min.css"></noscript>
+  
+  <!-- 预先加载的JS文件 -->
+  
+  <!-- 自定义站点横幅和背景 -->
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/img/site-banner.webp');
+      }
+      html[data-theme="dark"] .kratos-cover.kratos-cover-2 {
+        background-image: url('/img/site-banner.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('');
+        }
+        html[data-theme="dark"] body.custom-background {
+          background-image: url('');
+        }
+      }
+    
+    
+      .widget-kratos-about .photo-background {
+        background-image: url('/images/default.webp');
+      }
+      html[data-theme="dark"] .widget-kratos-about .photo-background {
+        background-image: url('/images/default.webp');
+      }
+    
+  </style>
+
+  <!-- 额外的追加注入项 -->
+  
+    <link rel="icon" href="data:,">
+<style>
+  /* 关闭首页/分类/标签卡片标题下的摘要预览，只保留标题、分类、日期和标签 */
+  #kratos-blog-post .kratos-entry-post-main .kratos-entry-content {
+    display: none;
+  }
+  /* 关于页正文已有头像，隐藏侧栏重复的 about 挂件 */
+  #kratos-page:has(.kr-page) #krw-about {
+    display: none;
+  }
+  /* Kratos 的内容区宽 1170px，1366–1599px 屏幕下左侧留给看板娘的空间不足，
+     会压住正文。这里只做响应式缩放和左移，不改模型与加载逻辑。 */
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    #waifu {
+      left: -20px !important;
+      scale: 0.7 !important;
+      transform-origin: bottom left !important;
+    }
+    #waifu-tips {
+      display: none !important;
+    }
+  }
+  @media (min-width: 1600px) and (max-width: 1919px) {
+    #waifu-tips {
+      display: none !important;
+    }
+  }
+</style>
+
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    <li>
+                                        
+                                            <a href="/">
+                                        
+                                            
+                                                <i class="fa fa-home"></i>
+                                            
+                                            首页
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/archives/">
+                                        
+                                            
+                                                <i class="fa fa-archive"></i>
+                                            
+                                            归档
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/categories/">
+                                        
+                                            
+                                                <i class="fa fa-folder-open"></i>
+                                            
+                                            分类
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/tags/">
+                                        
+                                            
+                                                <i class="fa fa-tags"></i>
+                                            
+                                            标签
+                                        </a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        
+                                            <a href="/about/">
+                                        
+                                            
+                                                <i class="fa fa-user"></i>
+                                            
+                                            关于
+                                        </a>
+                                        
+                                    </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">赛博偏方</a></div>
+                    <div id="kratos-nav-toggle-wrapper" class="nav-toggle">
+                        <a id="kratos-nav-toggle" class="kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>赛博偏方</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+
+
+        
+
+            
+
+            <section class="kr-main-col col-md-8">
+
+        
+
+            <style>
+  #kr-search-notice.alert {
+    transition: 0.3s;
+  }
+
+  #kr-search-results {
+    margin-top: 20px;
+  }
+
+  .kr-search-result {
+    margin: 20px;
+  }
+
+  .kratos-entry-content m {
+    color: #333;
+    background-color: yellow;
+  }
+
+  #search-input {
+    appearance: none;
+    -webkit-appearance: none;
+    border-color: #dbdbdb;
+    border-radius: 4px 0 0 4px;
+
+    &:hover {
+      border-color: #b5b5b5;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .input-group .form-input.input-lg {
+    display: inline-flex;
+    box-shadow: none;
+    flex: auto;
+    justify-content: flex-start;
+    padding: 0 8px;
+    font-size: 15px;
+    max-width: 100%;
+    border: 1px solid transparent;
+  }
+
+  .btn.btn-primary {
+    border: transparent;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .search-demo-tags a {
+    margin: 5px 10px;
+  }
+
+  #search-input {
+    color: var(--kr-theme-text);
+    background-color: var(--kr-theme-card-bg);
+
+    &:active,
+    &:focus {
+      border-color: var(--kr-theme-link-hover);
+      box-shadow: 0 0 0 0.125em rga(var(--kr-theme-link-hover), 0.25);
+    }
+  }
+</style>
+
+<div class="kratos-hentry kratos-page-inner clearfix">
+    <header class="kratos-page-header">
+        <h1 class="kratos-page-title text-center" itemprop="name headline">搜索</h1>
+    </header>
+    <div class="kratos-page-content kr-search-input">
+        <form class="input-group" onsubmit="return inpSearch();">
+            <input class="form-input input-lg" id="search-input" maxlength="80" name="s" placeholder="有什么想找找看的呢o(*￣▽￣*)ブ" required type="search">
+            <button class="btn btn-primary" type="submit">找一找~</button>
+        </form>
+    </div>
+</div>
+
+<div class="alert alert-info" id="kr-search-notice">
+    这里是 赛博偏方 的搜索引擎~
+</div>
+
+<div id="kr-search-results">
+    <div class="kratos-hentry kratos-page-inner clearfix">
+        <div class="kratos-page-content kr-search-result">
+            <p>搜索多个关键词时请用空格分割，例如「赛博偏方 AutoCAD Windows」这样；</p>
+            <p>您也可以使用这些标签碰碰运气哦~</p>
+            <p class="search-demo-tags">
+                <a href="/tags/%E8%B5%9B%E5%8D%9A%E5%81%8F%E6%96%B9/" style="font-size: 24px; color: #6c7588">赛博偏方</a> <a href="/tags/AutoCAD/" style="font-size: 18px; color: #b2b7be">AutoCAD</a> <a href="/tags/Windows/" style="font-size: 22px; color: #838b9a">Windows</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 18px; color: #b2b7be">域名</a> <a href="/tags/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E/" style="font-size: 18px; color: #b2b7be">免责声明</a> <a href="/tags/Disclaimer/" style="font-size: 18px; color: #b2b7be">Disclaimer</a> <a href="/tags/Steam/" style="font-size: 20px; color: #9ba1ac">Steam</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 18px; color: #b2b7be">插件</a> <a href="/tags/USB/" style="font-size: 18px; color: #b2b7be">USB</a> <a href="/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/" style="font-size: 18px; color: #b2b7be">电源管理</a> <a href="/tags/VAC/" style="font-size: 18px; color: #b2b7be">VAC</a> <a href="/tags/HEVC/" style="font-size: 18px; color: #b2b7be">HEVC</a> <a href="/tags/%E5%85%AC%E7%BD%91IP/" style="font-size: 18px; color: #b2b7be">公网IP</a> <a href="/tags/NET/" style="font-size: 18px; color: #b2b7be">.NET</a> <a href="/tags/Linux/" style="font-size: 18px; color: #b2b7be">Linux</a> <a href="/tags/VirtualBox/" style="font-size: 18px; color: #b2b7be">VirtualBox</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 18px; color: #b2b7be">联想</a> <a href="/tags/VSCode/" style="font-size: 18px; color: #b2b7be">VSCode</a> <a href="/tags/Google-Play/" style="font-size: 18px; color: #b2b7be">Google Play</a> <a href="/tags/%E4%BB%A3%E7%90%86/" style="font-size: 18px; color: #b2b7be">代理</a> <a href="/tags/%E7%BB%84%E7%AD%96%E7%95%A5/" style="font-size: 18px; color: #b2b7be">组策略</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 18px; color: #b2b7be">虚拟机</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<template id="kr-search-result-template">
+  <article class="kratos-hentry clearfix">
+    <div class="kratos-entry-border clearfix">
+        <div class="kratos-entry-post-inner kr-search-result">
+            <header class="kratos-entry-header">
+                $CATEGORY
+                <h2 class="kratos-entry-title"><a href="$LINK">$TITLE</a></h2>
+            </header>
+            <div class="kratos-entry-content">
+                <p>...$CONTENT...</p>
+            </div>
+        </div>
+        <div class="kratos-entry-post-meta">
+            <span class="pull-left">
+                <a><i class="fa fa-calendar"></i></a><a>$DATE</a>
+                $TAGS
+            </span>
+        </div>
+    </div>
+</article>
+</template>
+
+<template id="kr-search-tag-begin-template">
+  <a><i class="fa fa-tags"></i></a>
+</template>
+
+<template id="kr-search-tag-template">
+  <a class="tag-link" href="$LINK" rel="tag">$TAG</a>
+</template>
+
+<template id="kr-search-category-template">
+  <a class="label-link" href="$LINK">$CATEGORY</a>
+</template>
+
+
+  <script>window.searchDataFile = "/search-index.json";</script>
+  <script defer src="/js/kr-search.min.js"></script>
+
+
+
+        
+
+            </section>
+
+            
+                
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+        <div class="sticky-area">
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/img/about-avatar.jpg" alt="大食懒" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">用来放一些从网上找到的冷门方法</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                21
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                14
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                22
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类列表</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F/">Windows系统</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E6%95%85%E9%9A%9C%E4%BF%AE%E5%A4%8D/">故障修复</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%95%8C%E9%9D%A2%E5%AE%9A%E5%88%B6/">界面定制</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">系统安装</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%B3%BB%E7%BB%9F%E7%BB%84%E4%BB%B6/">系统组件</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE/">系统设置</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AB%99%E7%82%B9%E4%BF%A1%E6%81%AF/">站点信息</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C/">网络</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C/%E4%BB%A3%E7%90%86%E4%B8%8E%E5%88%86%E6%B5%81/">代理与分流</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C/%E5%AE%BD%E5%B8%A6%E6%8E%A5%E5%85%A5/">宽带接入</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6/Steam/">Steam</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/">工具软件</a><span class="category-list-count">3</span></li></ul></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/NET/" style="font-size: 0.6em;">.NET</a> <a href="/tags/AutoCAD/" style="font-size: 0.6em;">AutoCAD</a> <a href="/tags/Disclaimer/" style="font-size: 0.6em;">Disclaimer</a> <a href="/tags/Google-Play/" style="font-size: 0.6em;">Google Play</a> <a href="/tags/HEVC/" style="font-size: 0.6em;">HEVC</a> <a href="/tags/Linux/" style="font-size: 0.6em;">Linux</a> <a href="/tags/Steam/" style="font-size: 0.7em;">Steam</a> <a href="/tags/USB/" style="font-size: 0.6em;">USB</a> <a href="/tags/VAC/" style="font-size: 0.6em;">VAC</a> <a href="/tags/VSCode/" style="font-size: 0.6em;">VSCode</a> <a href="/tags/VirtualBox/" style="font-size: 0.6em;">VirtualBox</a> <a href="/tags/Windows/" style="font-size: 0.8em;">Windows</a> <a href="/tags/%E4%BB%A3%E7%90%86/" style="font-size: 0.6em;">代理</a> <a href="/tags/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E/" style="font-size: 0.6em;">免责声明</a> <a href="/tags/%E5%85%AC%E7%BD%91IP/" style="font-size: 0.6em;">公网IP</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 0.6em;">域名</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 0.6em;">插件</a> <a href="/tags/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86/" style="font-size: 0.6em;">电源管理</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/posts/d7058df7.html"><i class="fa fa-book"></i> 解决Google Play商店无法下载或更新应用的问题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/cc450914.html"><i class="fa fa-book"></i> 解决无权打开组策略问题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/2d22a3e7.html"><i class="fa fa-book"></i> 解决steam游戏备份无法删除的问题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/e79abca2.html"><i class="fa fa-book"></i> 在Steam客户端里安装SteamDB插件</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/1c7ef172.html"><i class="fa fa-book"></i> 解决虚拟机安装Windows98报错</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+            
+
+        
+
+                </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2026 赛博偏方 版权所有.</li>
+                            <li>本站已运行<span id="kr-since">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>自豪地使用 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a> 主题</li>
+                            <li>站点由 大食懒 用 <i class="fa fa-heart" style="color:#d43f57"></i> 搭建</li>
+                        </div>
+                        <!-- 额外的追加注入项 -->
+                        
+                            <div>
+                                
+                                    <li><a href="https://icp.gov.moe/?keyword=20264040" target="_blank" rel="noopener">萌ICP备20264040号</a></li>
+                                
+                            </div>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                <!-- 额外的追加注入项 -->
+                
+                
+                    <div class="box search-box">
+                        <a href="/search">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                <div class="box theme-box" id="theme-toggle">
+                    <span class="fa fa-adjust"></span>
+                </div>
+            </div>
+            <div id="gotop-box" class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+
+
+
+
+<!-- 额外的追加注入项 -->
+
+
+        <script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+  <script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+
+
+
+  <script defer src="/vendors/viewerjs@1.11.6/dist/viewer.min.js"></script>
+
+
+<script defer src="/js/kr-core.min.js"></script>
+
+
+  <script defer src="/js/kr-pjax.min.js"></script>
+
+
+<!-- 额外的追加注入项 -->
+
+  <script src="/live2d-widget/autoload.js"></script>
+
+
+    </body>
+</html>
